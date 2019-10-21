@@ -1,6 +1,617 @@
-<html>
-<body>
-To be implemented :-)
-  <a href="https://www.github.com/baptistecalin/Bootstrap-CV/MyCV.html">Bootstrap-CV</a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Baptiste Calin - CV</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive CV">
+    <meta name="author" content="Baptiste Calin">
+    <link rel="shortcut icon" href="resume.png">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+       
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="css/pillar-1.css">
+
+	<!-- Bootstrap-CV JS-->
+	<script type="text/javascript" src="js/Bootstrap-CV.js"></script>
+
+</head> 
+
+<body onload="changeLanguage('FR');">
+
+    <article class="resume-wrapper text-center position-relative">
+	    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+
+			<!-- HEADER -->
+		    <header class="resume-header pt-4 pt-md-0">
+			    <div class="media flex-column flex-md-row">
+
+				    <img class="mr-3 img-fluid picture mx-auto" src="images/profile.jpg" alt=""/>
+
+				    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+
+					    <div class="primary-info">
+						    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Baptiste Calin</h1>
+						    <div class="title mb-3">Software Architect Engineer - Team Lead</div>
+						    <ul class="list-unstyled">
+							    <li class="mb-2"><a href="mailto:Baptiste.calin@gmail.com"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>Baptiste.calin@gmail.com</a></li>
+								<li class="mb-2"><a href="tel:+32478941065"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3"></i>0478/94.10.65</a></li>
+								<li class="mb-2"><a href="https://www.google.be/maps/place/P%C3%A2turages,+7340+Colfontaine/@50.4048391,3.8295713,15z/data=!3m1!4b1!4m5!3m4!1s0x47c25a2acc35e499:0xbe6c10b5939384cb!8m2!3d50.4048263!4d3.8383261"><i class="fas fa-map fa-fw mr-2" data-fa-transform="grow-3"></i>Pâturages (Mons)</a></li>
+								<li class="langFR mb-2"><a href="Bootstrap-CV_FR.pdf"><i class="far fa-file fa-fw mr-2" data-fa-transform="grow-3"></i>Curriculum Vitea</a></li>
+								<li class="langEN mb-2"><a href="Bootstrap-CV_EN.pdf"><i class="far fa-file fa-fw mr-2" data-fa-transform="grow-3"></i>Curriculum Vitea</a></li>
+							</ul>
+					    </div>
+
+					    <div class="secondary-info ml-md-auto mt-2">
+							 <ul class="resume-social list-unstyled">
+				                <li class="mb-3"><a href="https://www.linkedin.com/in/baptistecalin/"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/baptistecalin</a></li>
+				                <li class="mb-3"><a href="https://github.com/baptistecalin"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/baptistecalin</a></li>
+								<li class="mb-3"><a href="https://twitter.com/baptistecalin"><span class="fa-container text-center mr-2"><i class="fab fa-twitter fa-fw"></i></span>twitter.com/baptistecalin</a></li>
+				                <li><a href="https://baptistecalin.github.io/"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>baptistecalin.github.io</a></li>
+						   </ul>
+					    </div>
+
+						<div class="language-info ml-md-auto mt-auto">
+							<ul class="list-unstyled">
+								<li class="mb-3"><a href="#" onclick="changeLanguage(this.text)">FR</a> | <a href="#" onclick="changeLanguage(this.text)">EN</a></li>
+							</ul>
+						</div>
+					    
+				    </div>
+			    </div>
+		    </header>
+
+
+		    <div class="resume-body p-5">
+
+				<!-- SUMMARY -->
+			    <section class="resume-section summary-section mb-5">
+				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+						<div class="langEN">Career Summary</div>
+						<div class="langFR">Résumé de carrière</div>
+					</h2>
+				    <div class="resume-section-content">
+					    <p class="mb-0">
+						<div class="langEN">Blewblew</div>
+						<div class="langFR">Blabla</div>
+						</p>
+				    </div>
+			    </section>
+
+			    <div class="row">
+				    <div class="col-lg-9">
+
+						<!-- EXPERIENCE -->
+					    <section class="resume-section experience-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<div class="langEN">Work Experience</div>
+								<div class="langFR">Expérience professionnelle</div>
+							</h2>
+						    <div class="resume-section-content">
+							    <div class="resume-timeline position-relative">
+
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Software Architect Engineer - Team Lead</h3>
+                                                <div class="resume-company-name ml-auto"><a href="http://www.xperthis.be">Xperthis</a></div>
+                                            </div>
+                                            <div class="resume-position-time">
+                                                <div class="langEN">2016 - Present</div>
+                                                <div class="langFR">2016 - Présent</div>
+                                            </div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <p>
+                                            <div class="langEN">Descr</div>
+                                            <div class="langFR">Descr</div>
+                                            </p>
+                                            <!--<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+                                            <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
+                                                <li>At vero eos et accusamus et iusto odio dignissimos.</li>
+                                                <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
+                                                <li>Maecenas tempus tellus eget.</li>
+                                            </ul>-->
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">
+                                                <div class="langEN">Technologies used:</div>
+                                                <div class="langFR">Technologies utilisées:</div>
+                                            </h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Maven</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Hibernate</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Rest</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Spring</span></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </article>
+
+								    <article class="resume-timeline-item position-relative pb-5">
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Software Engineer</h3>
+                                                <div class="resume-company-name ml-auto"><a href="http://www.xperthis.be">Polymedis (Xperthis)</a></div>
+										    </div>
+										    <div class="resume-position-time">2006 - 2016</div>
+									    </div>
+									    <div class="resume-timeline-item-desc">
+										    <p>
+                                                <div class="langFR">Development of a web application (Equafile / H + / EPR) for the hospital environment to computerize the computerized patient record (DPI).</div>
+                                                <div class="langFR">Développement d’une application web (Equafile/H++/EPR) pour le millieu hospitalier afin d'informatiser de dossier patient informatisé (DPI).</div>
+                                            </p>
+										    <!--<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+										    <ul>
+											    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
+											    <li>At vero eos et accusamus et iusto odio dignissimos.</li>
+											    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
+											    <li>Maecenas tempus tellus eget.</li>
+										    </ul>-->
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">
+                                                <div class="langEN">Technologies used:</div>
+                                                <div class="langFR">Technologies utilisées:</div>
+                                            </h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Jboss</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Ant</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">EJB3</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">JSP</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">DHTMLX</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Prototype</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PostgresSQL</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">SQLServer</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">CVS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Git</span></li>
+										    </ul>
+									    </div>
+
+								    </article>
+								    
+								   <!-- <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Senior Software Developer</h3>
+										        <div class="resume-company-name ml-auto">Google</div>
+										    </div>
+										    <div class="resume-position-time">2014 - 2018</div>
+									    </div>
+									    <div class="resume-timeline-item-desc">
+										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
+										    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Redux</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Django</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Webpack</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
+										    </ul>
+									    </div>
+								    </article>
+								    
+								    <article class="resume-timeline-item position-relative pb-5">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Co-Founder & Lead Developer</h3>
+										        <div class="resume-company-name ml-auto">To-do Lists</div>
+										    </div>
+										    <div class="resume-position-time">2012 - 2014</div>
+									    </div>
+									    <div class="resume-timeline-item-desc">
+										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+										    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Django</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Node.js</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Require.js</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
+										    </ul>
+									    </div>
+								    </article>
+								    
+								    <article class="resume-timeline-item position-relative">
+									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Web Developer <small class="text-muted">(Intern)</small></h3>
+										        <div class="resume-company-name ml-auto">Amazon</div>
+										    </div>
+										    <div class="resume-position-time">2011 - 2012</div>
+									    </div>
+									    <div class="resume-timeline-item-desc">
+										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum.</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Ruby on Rails</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/LESS</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MongoDB</span></li>
+										    </ul>
+									    </div>
+								    </article>-->
+							    </div>
+
+						    </div>
+					    </section>
+
+						<!-- EDUCATION / FORMATION -->
+						<section class="resume-section experience-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<div class="langEN">Educations/Formations</div>
+								<div class="langFR">Enseignements/Formations</div>
+							</h2>
+							<div class="resume-section-content">
+							    <div class="resume-timeline position-relative">
+								    <article class="resume-timeline-item position-relative pb-5">
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">
+													<div class="langFR">Master en Sciences Informatiques</div>
+													<div class="langEN">Master in Computer Science</div>
+												</h3>
+										    </div>
+										    <div class="resume-position-time">
+												<div class="langEN">2018 - Present</div>
+												<div class="langFR">2018 - Présent</div>
+												<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+													<div class="langFR">Université de Mons (UMONS)</div>
+													<div class="langEN">University of Mons (UMONS)</div>
+												</h4>
+											</div>
+									    </div>
+								    </article>
+
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">
+													<div class="langFR">Formation SQL avancé (Postgresql)</div>
+													<div class="langEN">Advanced SQL Training (Postgresql)</div>
+												</h3>
+											</div>
+											<div class="resume-position-time">
+												2015
+												<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+													DALIBO
+												</h4>
+											</div>
+										</div>
+									</article>
+
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">
+													<div class="langFR">Bachelier en informatique option Informatique de gestion</div>
+													<div class="langEN">Bachelor in computer science option management computer</div>
+												</h3>
+											</div>
+											<div class="resume-position-time">
+												2002 - 2005
+												<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+													H.E.P.M.B.C.
+												</h4>
+											</div>
+										</div>
+									</article>
+
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">
+													<div class="langFR">Scientifique industrielle: Construction et Travaux Publiques </div>
+													<div class="langEN">Industrial Scientist: Construction and Public Works </div>
+												</h3>
+											</div>
+											<div class="resume-position-time">
+												1997 - 2001
+												<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+													<div class="langFR">Institut Reine Astrid</div>
+													<div class="langEN">Reine Astrid Institute</div>
+												</h4>
+											</div>
+										</div>
+									</article>
+							    </div>
+							</div>
+						</section>
+				    </div>
+				    <div class="col-lg-3">
+
+						<!-- SKILLS and TOOLS -->
+					    <section class="resume-section skills-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<div class="langEN">Skills &amp; Tools</div>
+								<div class="langFR">Compétences &amp; Outils</div>
+							</h2>
+						    <div class="resume-section-content">
+
+								<!--
+						        <div class="resume-skill-item">
+							        <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
+							        <ul class="list-unstyled mb-4">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Angular</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">React</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">JavaScript</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Node.js</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div>
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+							        <ul class="list-unstyled">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Python/Django</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Ruby/Rails</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">PHP</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 86%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">WordPress/Shopify</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+							        </ul>
+						        </div>
+						        -->
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">HTML/CSS</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Javascript</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Prototype</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Bootstrap</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">Java/J2EE/EJB3</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Wildfly (Jboss)</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">
+												<div class="langEN">Others:</div>
+												<div class="langFR">Autres:</div>
+											</div>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<span class="badge badge-light">ANT</span>
+													<span class="badge badge-light">Maven</span>
+                                                    <span class="badge badge-light">Tomcat</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">
+										<div class="langEN">Database</div>
+										<div class="langFR">Base de données</div>
+									</h4>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">Postgresql</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">SQLServer</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">
+										<div class="langEN">Version Control Systems</div>
+										<div class="langFR">Systèmes de contrôle de version</div>
+									</h4>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">Git</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">
+												<div class="langEN">Others:</div>
+												<div class="langFR">Autres:</div>
+											</div>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<span class="badge badge-light">CVS</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">
+										<div class="langEN">Tools</div>
+										<div class="langFR">Outils</div>
+									</h4>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">IntelliJ</div>
+											<div class="progress resume-progress">
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">
+												<div class="langEN">Others:</div>
+												<div class="langFR">Autres:</div>
+											</div>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<span class="badge badge-light">Eclipse</span>
+													<span class="badge badge-light">VMWare</span>
+													<span class="badge badge-light">Virtualbox</span>
+													<span class="badge badge-light">Debian/Ubuntu</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+						    </div>
+					    </section>
+
+						<!-- LANGUAGE -->
+					    <section class="resume-section language-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<div class="langEN">Language</div>
+								<div class="langFR">Langues</div>
+							</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-lang-list">
+								    <li class="mb-2">
+										<span class="resume-lang-name font-weight-bold">
+											<div class="langEN">French</div>
+											<div class="langFR">Français</div>
+										</span>
+										<small class="text-muted font-weight-normal">
+											<div class="langEN">(Native)</div>
+											<div class="langFR">(Langue maternelle)</div>
+										</small>
+									</li>
+								    <li class="mb-2 align-middle">
+										<span class="resume-lang-name font-weight-bold">
+											<div class="langEN">English</div>
+											<div class="langFR">Anglais</div>
+										</span>
+										<small class="text-muted font-weight-normal">
+											<div class="langEN">(Professional)</div>
+											<div class="langFR">(Professionnel)</div>
+										</small>
+									</li>
+							    </ul>
+						    </div>
+					    </section>
+
+						<!-- INTERESTS -->
+					    <section class="resume-section interests-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<div class="langEN">Interests</div>
+								<div class="langFR">Intérêts</div>
+							</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled">
+								    <li class="mb-1">
+										<div class="langEN">Running</div>
+										<div class="langFR">Course à pieds</div>
+									</li>
+									<li class="mb-1">
+										<div class="langEN">Gardening</div>
+										<div class="langFR">Jardinage</div>
+									</li>
+									<li class="mb-1">
+										<div class="langEN">Cooking</div>
+										<div class="langFR">Cuisine</div>
+									</li>
+									<li class="mb-1">
+										<div class="langEN">Self learning</div>
+										<div class="langFR">Auto apprentissage</div>
+									</li>
+									<li class="mb-1">Manga</li>
+							    </ul>
+						    </div>
+					    </section>
+					    
+				    </div>
+			    </div>
+		    </div>
+
+	    </div>
+    </article>
 </body>
-</html>
+</html> 
