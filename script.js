@@ -7,6 +7,7 @@ let data = {}; // language specific
 
 // DOM refs
 const printBtn = document.getElementById("printCV");
+const downloadBtn = document.getElementById("downloadBtn");
 const langToggle = document.getElementById("langToggle");
 const profileToggle = document.getElementById("profileToggle");
 const profileTitle = document.getElementById("profileTitle");
@@ -127,6 +128,7 @@ renderAll = () => {
         ? data.navbar.softwareProfile
         : data.navbar.qualityProfile || profileToggle.textContent;
     printBtn.textContent = data.navbar.print || printBtn.textContent;
+    downloadBtn.textContent = data.navbar.download || downloadBtn.textContent;
   }
 
   // Header
@@ -313,6 +315,15 @@ profileToggle.addEventListener("click", () => {
 
 printBtn.addEventListener("click", function () {
   window.print();
+});
+
+downloadBtn.addEventListener("click", function () {
+  const fileName = `cv-${currentProfile}-${currentLang}.pdf`;
+
+  const link = document.createElement("a");
+  link.href = `assets/cv/${fileName}`; // dossier où tu stockes tes CV
+  link.download = fileName;
+  link.click();
 });
 
 // init

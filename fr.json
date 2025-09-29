@@ -2,7 +2,8 @@
   "navbar": {
     "qualityProfile": "Expert Qualité",
     "softwareProfile": "Ingénieur Logiciel",
-    "print": "Imprimer"
+    "print": "Imprimer le CV",
+    "download": "Télécharger le CV"
   },
   "yr": "an",
   "yrs": "ans",

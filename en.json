@@ -2,7 +2,8 @@
   "navbar": {
     "qualityProfile": "Quality Expert",
     "softwareProfile": "Software Engineer",
-    "print": "Print"
+    "print": "Print CV",
+    "download": "Download CV"
   },
   "yr": "yr",
   "yrs": "yrs",
