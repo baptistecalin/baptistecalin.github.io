@@ -58,7 +58,8 @@
       "Jest / Karma",
       "DHTMLX",
       "JQuery",
-      "Selenium"
+      "Selenium",
+      "RESTful APIs"
     ],
     "Bases de données": [
       "PostgreSQL",
@@ -82,7 +83,10 @@
       "IntelliJ",
       "Eclipse",
       "VS Code",
-      "Microsoft Office Suite"
+      "Microsoft Office Suite",
+      "Miro",
+      "Postman",
+      "Snyk"
     ],
     "Normes": [
       "ISO 13485",
@@ -119,7 +123,9 @@
           "KPI",
           "SonarQube",
           "AWS",
-          "BPMN"
+          "BPMN",
+          "Miro",
+          "Snyk"
         ]
       },
       {
@@ -145,7 +151,8 @@
           "Microsoft Office Suite",
           "Bizzmine (eQMS)",
           "PRRC",
-          "BPMN"
+          "BPMN",
+          "Miro"
         ]
       },
       {
@@ -230,7 +237,9 @@
           "GitLab",
           "Jenkins",
           "Docker",
-          "AWS"
+          "AWS",
+          "Postman",
+          "RESTful APIs"
         ]
       },
       {
@@ -270,7 +279,9 @@
           "Plan de Développement Personnel",
           "Recrutement",
           "Pratiques ITIL 4",
-          "Méthodologie Agile / Scrum"
+          "Méthodologie Agile / Scrum",
+          "Postman",
+          "RESTful APIs"
         ]
       },
       {
@@ -303,7 +314,8 @@
           "Plan de Développement Personnel",
           "Recrutement",
           "Pratiques ITIL 4",
-          "Méthodologie Agile / Scrum"
+          "Méthodologie Agile / Scrum",
+          "RESTful APIs"
         ]
       }
     ]
