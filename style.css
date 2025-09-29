@@ -1,0 +1,221 @@
+/* ==================
+        GENERAL
+   ================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* -- HEADER -- */
+.header-bg {
+  background-image: url("images/header-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-bg .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* -- NAVBAR -- */
+.navbar-logo {
+  filter: brightness(0) invert(1);
+}
+nav {
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* -- PERSONAL INFORMATION */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.personal-info p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.personal-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.personal-info a:hover {
+  text-decoration: underline;
+}
+
+/* -- CARD -- */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ==================
+      FOR PRINTING
+   ================== */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body {
+    font-size: 11pt !important;
+  }
+
+  h1 {
+    font-size: 18pt !important;
+  }
+
+  h2 {
+    font-size: 14pt !important;
+  }
+
+  span,
+  .card p {
+    font-size: 10pt !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #000 !important;
+    page-break-inside: avoid;
+  }
+
+  /* -- HEADER -- */
+  .header-bg {
+    background: none !important;
+    color: #000 !important;
+    padding: 0 !important;
+    font-size: 1em;
+  }
+
+  .header-bg::before {
+    display: none !important;
+  }
+
+  .personal-info a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  /* -- NAVBAR & FOOTER -- */
+  .navbar,
+  footer {
+    display: none !important;
+  }
+
+  /* -- CARD -- */
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    break-inside: avoid;
+  }
+  .card,
+  .card-body,
+  ul,
+  li,
+  p {
+    page-break-inside: avoid;
+  }
+  .card-body {
+    padding: 0.25rem !important;
+  }
+  /* -- LISTS -- */
+  .list-group-item {
+    border: none !important;
+    padding-left: 0 !important;
+    color: #000 !important;
+  }
+
+  /* -- LINK -- */
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  /* -- SECTIONS -- */
+  .break {
+    break-inside: avoid;
+    page-break-after: always;
+  }
+  .bg-light,
+  .bg-dark,
+  .bg-primary,
+  .bg-secondary {
+    background: none !important;
+    color: #000 !important;
+  }
+
+  /* -- SHADOW -- */
+  .shadow,
+  .shadow-sm,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  /* -- COLUMNS -- */
+  .col-md-4,
+  .col-sm-6 {
+    float: none !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* BUTTON */
+  /* .btn-outline-secondary.disabled {
+    color: #000 !important;
+    border-color: #000 !important;
+    background-color: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-size: 0.6rem !important;
+    padding: 0.25rem 0.4rem !important;
+  } */
+  .btn {
+    all: unset !important; /* Supprime tout le style bouton */
+    display: inline !important;
+    font-size: 0.9rem !important;
+    color: #000 !important;
+    font-weight: normal !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .btn::after {
+    content: ", ";
+  }
+  .btn:last-child::after {
+    content: "";
+  }
+}
