@@ -32,7 +32,12 @@
       "Méthodologie Agile / Scrum",
       "BPMN"
     ],
-    "Management": ["KPI", "Plan de Développement Personnel", "Recrutement"],
+    "Management": [
+      "KPI",
+      "Plan de Développement Personnel",
+      "Recrutement",
+      "PRRC"
+    ],
     "Développement": [
       "Java/J2EE",
       "Node.js",
