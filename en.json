@@ -30,7 +30,8 @@
       "Change Management",
       "ITIL 4 practices",
       "Agile / Scrum methodology",
-      "BPMN"
+      "BPMN",
+      "Configuration Management"
     ],
     "Management": ["KPI", "Personal Development Plan", "Recruitment", "PRRC"],
     "Development": [
@@ -93,7 +94,7 @@
       "ISO 62304",
       "ISO 9126"
     ],
-    "Platform": ["JBoss", "Tomcat", "Linux", "Ainsible", "AWS"]
+    "Platform": ["JBoss", "Tomcat", "Linux", "Ainsible", "AWS", "CI/CD"]
   },
   "quality": {
     "title": "Quality Expert",
@@ -119,7 +120,12 @@
           "AWS",
           "BPMN",
           "Miro",
-          "Snyk"
+          "Snyk",
+          "Configuration Management",
+          "CI/CD",
+          "Docker",
+          "GitLab",
+          "Jenkins"
         ]
       },
       {
@@ -146,7 +152,9 @@
           "Bizzmine (eQMS)",
           "PRRC",
           "BPMN",
-          "Miro"
+          "Miro",
+          "Configuration Management",
+          "CI/CD"
         ]
       },
       {
@@ -172,7 +180,10 @@
           "PowerBI",
           "KPI",
           "ISO 9126",
-          "Microsoft Office Suite"
+          "Microsoft Office Suite",
+          "Configuration Management",
+          "CI/CD",
+          "Jenkins"
         ]
       },
       {
@@ -198,7 +209,10 @@
           "Linux",
           "JUnit / TestNG",
           "ISO 9126",
-          "Selenium"
+          "Selenium",
+          "Configuration Management",
+          "CI/CD",
+          "Jenkins"
         ]
       }
     ]
@@ -233,7 +247,10 @@
           "Docker",
           "AWS",
           "Postman",
-          "RESTful APIs"
+          "RESTful APIs",
+          "Snyk",
+          "Configuration Management",
+          "CI/CD"
         ]
       },
       {
@@ -251,7 +268,9 @@
           "Recruitment",
           "Agile / Scrum methodology",
           "ITIL 4 practices",
-          "PowerBI"
+          "PowerBI",
+          "Configuration Management",
+          "CI/CD"
         ]
       },
       {
@@ -275,7 +294,9 @@
           "ITIL 4 practices",
           "Agile / Scrum methodology",
           "Postman",
-          "RESTful APIs"
+          "RESTful APIs",
+          "Configuration Management",
+          "CI/CD"
         ]
       },
       {
@@ -309,7 +330,9 @@
           "Recruitment",
           "ITIL 4 practices",
           "Agile / Scrum methodology",
-          "RESTful APIs"
+          "RESTful APIs",
+          "Configuration Management",
+          "CI/CD"
         ]
       }
     ]
