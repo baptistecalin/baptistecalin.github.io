@@ -15,86 +15,95 @@
   "educationTitle": "Education & Certifications",
   "communicationTitle": "Communication skills",
   "skillsLabelForExperience": "Skills used",
-  "softSkills": [
-    "Leadership / Ownership",
-    "Team coordinator / leader",
-    "Trainer & Coach",
-    "Proactive",
-    "Result oriented",
-    "Innovation thinking",
-    "Positive and invested"
-  ],
-  "skillsSummary": {
-    "Processes": [
-      "QMS",
-      "Change Management",
-      "ITIL 4 practices",
-      "Agile / Scrum methodology",
-      "BPMN",
-      "Configuration Management"
+  "skills": {
+    "softSkills": [
+      { "id": 1, "name": "Leadership / Ownership" },
+      { "id": 2, "name": "Team coordinator / leader" },
+      { "id": 3, "name": "Trainer & Coach" },
+      { "id": 4, "name": "Proactive" },
+      { "id": 5, "name": "Result oriented" },
+      { "id": 6, "name": "Innovation thinking" },
+      { "id": 7, "name": "Positive and invested" }
     ],
-    "Management": ["KPI", "Personal Development Plan", "Recruitment", "PRRC"],
-    "Development": [
-      "Java/J2EE",
-      "Node.js",
-      "React.js",
-      "HTML/JS/CSS",
-      "Pipeline",
-      "XML/XSLT",
-      "HCL"
-    ],
-    "Frameworks": [
-      "Spring",
-      "Hibernate / JDBC",
-      "Spring Security",
-      "ReactBootstrap",
-      "JUnit / TestNG",
-      "Angular",
-      "Jest / Karma",
-      "DHTMLX",
-      "JQuery",
-      "Selenium",
-      "RESTful APIs"
-    ],
-    "Databases": [
-      "PostgreSQL",
-      "SQL Server",
-      "Oracle",
-      "MongoDB",
-      "SQLite",
-      "MySQL",
-      "H2"
-    ],
-    "Tools": [
-      "Jira",
-      "Confluence",
-      "PowerBI",
-      "GitLab",
-      "Jenkins",
-      "Github",
-      "SonarQube",
-      "Docker",
-      "Bizzmine (eQMS)",
-      "IntelliJ",
-      "Eclipse",
-      "VS Code",
-      "Microsoft Office Suite",
-      "Miro",
-      "Postman",
-      "Snyk"
-    ],
-    "Standards": [
-      "ISO 13485",
-      "MDR",
-      "ISO 14971",
-      "ISO 12207",
-      "ISO 27001",
-      "ISO 9001",
-      "ISO 82304",
-      "ISO 62304",
-      "ISO 9126"
-    ],
-    "Platform": ["JBoss", "Tomcat", "Linux", "Ainsible", "AWS", "CI/CD"]
+    "skillsSummary": [
+      { "id": 1, "category": "Processes", "name": "QMS" },
+      { "id": 2, "category": "Processes", "name": "Change Management" },
+      { "id": 3, "category": "Processes", "name": "ITIL 4 practices" },
+      { "id": 4, "category": "Processes", "name": "Agile / Scrum methodology" },
+      { "id": 5, "category": "Processes", "name": "BPMN" },
+      { "id": 6, "category": "Processes", "name": "Configuration Management" },
+
+      { "id": 7, "category": "Management", "name": "KPI" },
+      {
+        "id": 8,
+        "category": "Management",
+        "name": "Personal Development Plan"
+      },
+      { "id": 9, "category": "Management", "name": "Recruitment" },
+      { "id": 10, "category": "Management", "name": "PRRC" },
+
+      { "id": 11, "category": "Development", "name": "Java/J2EE" },
+      { "id": 12, "category": "Development", "name": "Node.js" },
+      { "id": 13, "category": "Development", "name": "React.js" },
+      { "id": 14, "category": "Development", "name": "HTML/JS/CSS" },
+      { "id": 15, "category": "Development", "name": "Pipeline" },
+      { "id": 16, "category": "Development", "name": "XML/XSLT" },
+      { "id": 17, "category": "Development", "name": "HCL" },
+
+      { "id": 18, "category": "Frameworks", "name": "Spring" },
+      { "id": 19, "category": "Frameworks", "name": "Hibernate / JDBC" },
+      { "id": 20, "category": "Frameworks", "name": "Spring Security" },
+      { "id": 21, "category": "Frameworks", "name": "ReactBootstrap" },
+      { "id": 22, "category": "Frameworks", "name": "JUnit / TestNG" },
+      { "id": 23, "category": "Frameworks", "name": "Angular" },
+      { "id": 24, "category": "Frameworks", "name": "Jest / Karma" },
+      { "id": 25, "category": "Frameworks", "name": "DHTMLX" },
+      { "id": 26, "category": "Frameworks", "name": "JQuery" },
+      { "id": 27, "category": "Frameworks", "name": "Selenium" },
+      { "id": 28, "category": "Frameworks", "name": "RESTful APIs" },
+
+      { "id": 29, "category": "Databases", "name": "PostgreSQL" },
+      { "id": 30, "category": "Databases", "name": "SQL Server" },
+      { "id": 31, "category": "Databases", "name": "Oracle" },
+      { "id": 32, "category": "Databases", "name": "MongoDB" },
+      { "id": 33, "category": "Databases", "name": "SQLite" },
+      { "id": 34, "category": "Databases", "name": "MySQL" },
+      { "id": 35, "category": "Databases", "name": "H2" },
+
+      { "id": 36, "category": "Tools", "name": "Jira" },
+      { "id": 37, "category": "Tools", "name": "Confluence" },
+      { "id": 38, "category": "Tools", "name": "PowerBI" },
+      { "id": 39, "category": "Tools", "name": "GitLab" },
+      { "id": 40, "category": "Tools", "name": "Jenkins" },
+      { "id": 41, "category": "Tools", "name": "Github" },
+      { "id": 42, "category": "Tools", "name": "SonarQube" },
+      { "id": 43, "category": "Tools", "name": "Docker" },
+      { "id": 44, "category": "Tools", "name": "Bizzmine (eQMS)" },
+      { "id": 45, "category": "Tools", "name": "IntelliJ" },
+      { "id": 46, "category": "Tools", "name": "Eclipse" },
+      { "id": 47, "category": "Tools", "name": "VS Code" },
+      { "id": 48, "category": "Tools", "name": "Microsoft Office Suite" },
+      { "id": 49, "category": "Tools", "name": "Miro" },
+      { "id": 50, "category": "Tools", "name": "Postman" },
+      { "id": 51, "category": "Tools", "name": "Snyk" },
+
+      { "id": 52, "category": "Standards", "name": "ISO 13485" },
+      { "id": 53, "category": "Standards", "name": "MDR" },
+      { "id": 54, "category": "Standards", "name": "ISO 14971" },
+      { "id": 55, "category": "Standards", "name": "ISO 12207" },
+      { "id": 56, "category": "Standards", "name": "ISO 27001" },
+      { "id": 57, "category": "Standards", "name": "ISO 9001" },
+      { "id": 58, "category": "Standards", "name": "ISO 82304" },
+      { "id": 59, "category": "Standards", "name": "ISO 62304" },
+      { "id": 60, "category": "Standards", "name": "ISO 9126" },
+
+      { "id": 61, "category": "Platform", "name": "JBoss" },
+      { "id": 62, "category": "Platform", "name": "Tomcat" },
+      { "id": 63, "category": "Platform", "name": "Linux" },
+      { "id": 64, "category": "Platform", "name": "Ainsible" },
+      { "id": 65, "category": "Platform", "name": "AWS" },
+      { "id": 66, "category": "Platform", "name": "CI/CD" }
+    ]
   },
   "quality": {
     "title": "Quality Expert",
@@ -107,25 +116,8 @@
         "description": "Application Lifecycle Management (ALM) with ISO 12207 - Analysis of the standard and identification of actions to be implemented - Project: Participation in setting up a development factory and CI/CD chain implementation at the SPW - SonarQube: Implementation of the tool in conjunction with the MoE project's DevSecOps team and developers teams",
         "location": "Namur",
         "skills": [
-          "QMS",
-          "ISO 9001",
-          "ITIL 4 practices",
-          "Microsoft Office Suite",
-          "Agile / Scrum methodology",
-          "Jira",
-          "Confluence",
-          "PowerBI",
-          "KPI",
-          "SonarQube",
-          "AWS",
-          "BPMN",
-          "Miro",
-          "Snyk",
-          "Configuration Management",
-          "CI/CD",
-          "Docker",
-          "GitLab",
-          "Jenkins"
+          1, 3, 4, 4, 5, 5, 6, 7, 36, 37, 38, 39, 40, 42, 43, 48, 49, 51, 57,
+          65, 66
         ]
       },
       {
@@ -135,26 +127,7 @@
         "description": "Medical Device Project management - Quality Management System implementation under Medical Device Directive (93/42/EEC) and Medical Device Regulatory (EU) 2017/745 - SaMD: Technical files consolidation - Certification ISO 13485 - Training Management - Records management - Authority and Notify body communication - ISO 13485 Quality Management System connection with ISO9001 and ISO27001 - Quality Management System connection with ITIL 4 practices - GDPR Project management + GDPR connection with ISO27001",
         "location": "Heverlee",
         "skills": [
-          "QMS",
-          "Personal Development Plan",
-          "Recruitment",
-          "ITIL 4 practices",
-          "Agile / Scrum methodology",
-          "Jira",
-          "Confluence",
-          "PowerBI",
-          "KPI",
-          "MDR",
-          "ISO 13485",
-          "ISO 9001",
-          "ISO 27001",
-          "Microsoft Office Suite",
-          "Bizzmine (eQMS)",
-          "PRRC",
-          "BPMN",
-          "Miro",
-          "Configuration Management",
-          "CI/CD"
+          1, 3, 4, 5, 6, 7, 8, 9, 10, 36, 37, 38, 44, 48, 49, 52, 53, 56, 57, 66
         ]
       },
       {
@@ -164,26 +137,8 @@
         "description": "Release software management - Test automation strategy and implementation - Quality Software management (Quality Assurance, Control, Managemnet) - Downtime management of IT System - Team management",
         "location": "Nivelles",
         "skills": [
-          "Change Management",
-          "IntelliJ",
-          "Personal Development Plan",
-          "Recruitment",
-          "ITIL 4 practices",
-          "Agile / Scrum methodology",
-          "Jira",
-          "Confluence",
-          "IntelliJ",
-          "Java/J2EE",
-          "Linux",
-          "JUnit / TestNG",
-          "Selenium",
-          "PowerBI",
-          "KPI",
-          "ISO 9126",
-          "Microsoft Office Suite",
-          "Configuration Management",
-          "CI/CD",
-          "Jenkins"
+          2, 3, 4, 6, 7, 8, 9, 11, 16, 22, 23, 27, 28, 36, 37, 38, 40, 45, 48,
+          50, 60, 66
         ]
       },
       {
@@ -193,26 +148,8 @@
         "description": "Product management & Architect for a web-based healthcare application: Electronic Patient Record (EPR) - Saas Solution for Portail Patient Application - Set of teams coordinator and Team management - Incident consultant and helpdesk management",
         "location": "Nivelles",
         "skills": [
-          "Change Management",
-          "ITIL 4 practices",
-          "Agile / Scrum methodology",
-          "ISO 82304",
-          "ISO 62304",
-          "Jira",
-          "Confluence",
-          "Microsoft Office Suite",
-          "Personal Development Plan",
-          "Recruitment",
-          "KPI",
-          "IntelliJ",
-          "Java/J2EE",
-          "Linux",
-          "JUnit / TestNG",
-          "ISO 9126",
-          "Selenium",
-          "Configuration Management",
-          "CI/CD",
-          "Jenkins"
+          2, 3, 4, 5, 6, 7, 8, 8, 9, 9, 11, 14, 16, 18, 19, 25, 26, 28, 29, 30,
+          31, 35, 36, 36, 37, 37, 40, 45, 46, 48, 48, 58, 59, 61, 62, 63, 66
         ]
       }
     ]
@@ -228,29 +165,8 @@
         "description": "Application Lifecycle Management (ALM) with ISO 12207 - Analysis of the standard and identification of actions to be implemented - Project: Participation in setting up a development factory and CI/CD chain implementation at the SPW - SonarQube: Implementation of the tool in conjunction with the MoE project's DevSecOps team and developers teams",
         "location": "Namur",
         "skills": [
-          "Java/J2EE",
-          "Pipeline",
-          "Jest / Karma",
-          "Microsoft Office Suite",
-          "Jira",
-          "Confluence",
-          "KPI",
-          "Agile / Scrum methodology",
-          "VS Code",
-          "Node.js",
-          "SonarQube",
-          "Ainsible",
-          "HCL",
-          "Github",
-          "GitLab",
-          "Jenkins",
-          "Docker",
-          "AWS",
-          "Postman",
-          "RESTful APIs",
-          "Snyk",
-          "Configuration Management",
-          "CI/CD"
+          4, 6, 7, 11, 12, 15, 17, 24, 28, 36, 37, 39, 40, 41, 42, 43, 47, 48,
+          50, 51, 64, 65, 66
         ]
       },
       {
@@ -259,19 +175,7 @@
         "period": "Jun 2019 - Apr 2023",
         "description": "Medical Device Project management - Quality Management System implementation under Medical Device Directive (93/42/EEC) and Medical Device Regulatory (EU) 2017/745 - SaMD: Technical files consolidation - Certification ISO 13485 - Training Management - Records management - Authority and Notify body communication - ISO 13485 Quality Management System connection with ISO9001 and ISO27001 - Quality Management System connection with ITIL 4 practices - GDPR Project management + GDPR connection with ISO27001",
         "location": "Heverlee",
-        "skills": [
-          "Microsoft Office Suite",
-          "Jira",
-          "Confluence",
-          "KPI",
-          "Personal Development Plan",
-          "Recruitment",
-          "Agile / Scrum methodology",
-          "ITIL 4 practices",
-          "PowerBI",
-          "Configuration Management",
-          "CI/CD"
-        ]
+        "skills": [3, 4, 6, 7, 8, 9, 36, 37, 38, 48, 66]
       },
       {
         "role": "Test & Release Manager",
@@ -279,25 +183,7 @@
         "period": "Jun 2020 - Jun 2021",
         "description": "Release software management - Test automation strategy and implementation - Quality Software management (Quality Assurance, Control, Managemnet) - Downtime management of IT System - Team management",
         "location": "Nivelles",
-        "skills": [
-          "Java/J2EE",
-          "Selenium",
-          "JUnit / TestNG",
-          "Angular",
-          "Jenkins",
-          "Microsoft Office Suite",
-          "Jira",
-          "Confluence",
-          "KPI",
-          "Personal Development Plan",
-          "Recruitment",
-          "ITIL 4 practices",
-          "Agile / Scrum methodology",
-          "Postman",
-          "RESTful APIs",
-          "Configuration Management",
-          "CI/CD"
-        ]
+        "skills": [3, 4, 6, 7, 8, 9, 11, 22, 23, 27, 28, 36, 37, 40, 48, 50, 66]
       },
       {
         "role": "Solution Architect - Software Engineer",
@@ -306,46 +192,24 @@
         "description": "Product management & Architect for a web-based healthcare application: Electronic Patient Record (EPR) - Saas Solution for Portail Patient Application - Set of teams coordinator and Team management - Incident consultant and helpdesk management",
         "location": "Nivelles",
         "skills": [
-          "Java/J2EE",
-          "HTML/JS/CSS",
-          "XML/XSLT",
-          "Spring",
-          "Hibernate / JDBC",
-          "DHTMLX",
-          "JQuery",
-          "PostgreSQL",
-          "SQL Server",
-          "Oracle",
-          "H2",
-          "JBoss",
-          "Tomcat",
-          "Linux",
-          "IntelliJ",
-          "Eclipse",
-          "Microsoft Office Suite",
-          "Jira",
-          "Confluence",
-          "KPI",
-          "Personal Development Plan",
-          "Recruitment",
-          "ITIL 4 practices",
-          "Agile / Scrum methodology",
-          "RESTful APIs",
-          "Configuration Management",
-          "CI/CD"
+          5, 6, 7, 8, 9, 11, 14, 16, 18, 19, 25, 26, 28, 29, 30, 31, 35, 36, 37,
+          40, 45, 46, 48, 61, 62, 63, 66
         ]
       }
     ]
   },
   "education": [
-    "AWS Cloud Practitioner essentials (2023)",
-    "Certified ScrumMaster - CSM (2023)",
-    "Person Responsible for Regulatory Compliance (2021)",
-    "Coach and Manage a team (2021)",
-    "ITIL 4 Foundation (2020)",
-    "ISO 13485/2016 and CE Mark (2019)",
-    "PostgreSQL DBA (2015)",
-    "Bachelor’s in Informatics – H.E.P.M.B.C (2005)"
+    { "id": 1, "name": "AWS Cloud Practitioner essentials (2023)" },
+    { "id": 2, "name": "Certified ScrumMaster - CSM (2023)" },
+    { "id": 3, "name": "Person Responsible for Regulatory Compliance (2021)" },
+    { "id": 4, "name": "Coach and Manage a team (2021)" },
+    { "id": 5, "name": "ITIL 4 Foundation (2020)" },
+    { "id": 6, "name": "ISO 13485/2016 and CE Mark (2019)" },
+    { "id": 7, "name": "PostgreSQL DBA (2015)" },
+    { "id": 8, "name": "Bachelor’s in Informatics – H.E.P.M.B.C (2005)" }
   ],
-  "communication": ["English : Limited working proficiency", "French : Native"]
+  "communication": [
+    { "id": 1, "name": "English : Limited working proficiency" },
+    { "id": 2, "name": "French : Native" }
+  ]
 }

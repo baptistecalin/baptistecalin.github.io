@@ -64,21 +64,23 @@ function unique(arr) {
 function categorizeSkills(skills, categories) {
   const categorized = {};
 
-  skills.forEach((skill) => {
+  skills.forEach((skillId) => {
     let placed = false;
 
-    for (const [category, catSkills] of Object.entries(categories)) {
-      if (catSkills.includes(skill)) {
-        if (!categorized[category]) categorized[category] = [];
-        categorized[category].push(skill);
-        placed = true;
-        break;
+    categories.forEach((skill) => {
+      if (skillId == skill.id) {
+        if (!categorized[skill.category]) categorized[skill.category] = [];
+        if (!categorized[skill.category].includes(skill.name)) {
+          categorized[skill.category].push(skill.name);
+          placed = true;
+        }
+        return;
       }
-    }
+    });
 
     if (!placed) {
       if (!categorized.Other) categorized.Other = [];
-      categorized.Other.push(skill);
+      categorized.Other.push(skillId);
     }
   });
 
@@ -117,10 +119,6 @@ function getDurationFromPeriod(periodStr, data) {
 }
 
 function getProfileSkills(profileData) {
-  if (Array.isArray(profileData.skills) && profileData.skills.length) {
-    return profileData.skills;
-  }
-
   const acc = [];
   if (Array.isArray(profileData.experience)) {
     profileData.experience.forEach((exp) => {
@@ -145,7 +143,7 @@ function renderList(label, titleID, listID, itemList) {
   itemList.forEach((item) => {
     const li = document.createElement("li");
     li.className = "ms-3";
-    li.textContent = item;
+    li.textContent = item.name;
     listObj.appendChild(li);
   });
 }
@@ -275,7 +273,7 @@ function renderAll() {
     data.softSkillsTitle || "Soft Skills",
     "softSkillsTitle",
     "softSkillsList",
-    data.softSkills
+    data.skills.softSkills
   );
 
   // Skills
@@ -284,12 +282,12 @@ function renderAll() {
 
   const profileSkills = getProfileSkills(prof);
   if (profileSkills.length) {
-    renderSkills(profileSkills, data.skillsSummary || {}, skillsList);
+    renderSkills(profileSkills, data.skills.skillsSummary || {}, skillsList);
   }
 
   // Experience
   experienceTitle.textContent = data.experienceTitle || "Work Experience";
-  renderExperience(prof.experience, data.skillsSummary || {});
+  renderExperience(prof.experience, data.skills.skillsSummary || {});
 
   // Education & Communication
   renderList(
