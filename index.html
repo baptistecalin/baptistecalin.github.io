@@ -13,7 +13,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Bootstrap ICON -->
+
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -23,7 +24,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-light">
-    <!-- Header -->
+    <!-- ===================================
+       HEADER
+    =================================== -->
     <header class="container-fluid text-center text-white header-bg">
       <!-- Navbar -->
       <nav
@@ -35,44 +38,48 @@
           <a class="navbar-brand" href="#">
             <img
               src="images/logo.png"
-              alt="Baptiste Calin"
+              alt="Baptiste Calin Logo"
               class="navbar-logo"
             />
           </a>
-          <!-- Btns -->
+
+          <!-- Action buttons -->
           <div class="d-flex">
             <button
               id="downloadBtn"
               class="btn btn-outline-light btn-sm me-2"
+              aria-label="Download CV"
             ></button>
             <button
               id="printCV"
               class="btn btn-outline-light btn-sm me-2"
+              aria-label="Print CV"
             ></button>
             <button
               id="langToggle"
               class="btn btn-outline-light btn-sm me-2"
+              aria-label="Change language"
             ></button>
             <button
               id="profileToggle"
               class="btn btn-outline-light btn-sm"
+              aria-label="Toggle profile"
             ></button>
           </div>
         </div>
       </nav>
+
+      <!-- Profile -->
       <div class="container d-flex flex-column align-items-center">
         <!-- Profile photo -->
-        <div class="mb-3">
-          <img
-            src="images/photo_profile-300x300.jpg"
-            alt="Baptiste Calin"
-            class="rounded-circle profile-photo"
-          />
-        </div>
+        <img
+          src="images/photo_profile-300x300.jpg"
+          alt="Profile photo of Baptiste Calin"
+          class="rounded-circle profile-photo mb-3"
+        />
 
         <!-- Personal Info -->
         <div class="personal-info text-center mb-3">
-          <p class="mb-1"></p>
           <h2>Baptiste Calin</h2>
           <p class="mb-1">
             <i class="bi bi-envelope"></i>
@@ -87,7 +94,11 @@
           <p class="mb-1"><i class="bi bi-geo-alt"></i> Colfontaine, BE</p>
           <p class="mb-0">
             <i class="bi bi-linkedin"></i>
-            <a href="https://www.linkedin.com/in/baptistecalin" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/baptistecalin"
+              target="_blank"
+              rel="noopener"
+            >
               linkedin.com/in/baptistecalin
             </a>
           </p>
@@ -96,12 +107,14 @@
         <!-- Summary -->
         <div class="text-center">
           <h1 id="profileTitle" class="fw-bold"></h1>
-          <span id="profileSummary" class="lead text-start d-block pb-3"></span>
+          <span id="profileSummary" class="lead d-block pb-3"></span>
         </div>
       </div>
     </header>
 
-    <!-- Sections -->
+    <!-- ===================================
+       MAIN CONTENT
+    =================================== -->
     <main class="container">
       <!-- Soft Skills -->
       <section class="mb-4 break">
@@ -117,14 +130,14 @@
         <ul id="skillsList" class="list-group"></ul>
       </section>
 
-      <!-- Experiences -->
+      <!-- Experience -->
       <section class="mb-4">
         <h2 id="experienceTitle"></h2>
         <hr class="section-divider" />
         <div id="experienceList"></div>
       </section>
 
-      <!-- Educations -->
+      <!-- Education -->
       <section class="mb-4">
         <h2 id="educationTitle"></h2>
         <hr class="section-divider" />
@@ -139,7 +152,9 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ===================================
+       FOOTER
+    =================================== -->
     <footer class="text-center py-4">
       <small>&copy; 2025 - Baptiste Calin</small>
     </footer>

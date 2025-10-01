@@ -1,7 +1,6 @@
-/* ==================
-        GENERAL
-   ================== */
-
+/* ===================================
+   RESET & BASE STYLES
+=================================== */
 * {
   margin: 0;
   padding: 0;
@@ -18,22 +17,18 @@ h3 {
   font-weight: 700;
 }
 
-/* -- HEADER -- */
+/* ===================================
+   HEADER
+=================================== */
 .header-bg {
-  background-image: url("images/header-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("images/header-bg.png") center/cover no-repeat;
   position: relative;
 }
 
 .header-bg::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -42,15 +37,20 @@ h3 {
   z-index: 1;
 }
 
-/* -- NAVBAR -- */
+/* ===================================
+   NAVIGATION
+=================================== */
+nav {
+  border-radius: 0 0 10px 10px;
+}
+
 .navbar-logo {
   filter: brightness(0) invert(1);
 }
-nav {
-  border-radius: 0px 0px 10px 10px;
-}
 
-/* -- PERSONAL INFORMATION */
+/* ===================================
+   PERSONAL INFORMATION
+=================================== */
 .profile-photo {
   width: 120px;
   height: 120px;
@@ -73,33 +73,30 @@ nav {
   text-decoration: underline;
 }
 
-/* -- CARD -- */
+/* ===================================
+   CARDS
+=================================== */
 .card {
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-/* ==================
-      FOR PRINTING
-   ================== */
+/* ===================================
+   PRINT STYLES
+=================================== */
 @media print {
   body {
     background: #fff !important;
     color: #000 !important;
-    -webkit-print-color-adjust: exact;
-  }
-
-  body {
     font-size: 11pt !important;
+    -webkit-print-color-adjust: exact;
   }
 
   h1 {
     font-size: 18pt !important;
   }
-
   h2 {
     font-size: 14pt !important;
   }
-
   span,
   .card p {
     font-size: 10pt !important;
@@ -112,34 +109,35 @@ nav {
     page-break-inside: avoid;
   }
 
-  /* -- HEADER -- */
+  /* Header */
   .header-bg {
     background: none !important;
     color: #000 !important;
     padding: 0 !important;
     font-size: 1em;
   }
-
   .header-bg::before {
     display: none !important;
   }
-
   .personal-info a {
     color: #000 !important;
     text-decoration: none !important;
   }
 
-  /* -- NAVBAR & FOOTER -- */
+  /* Hide unnecessary sections */
   .navbar,
   footer {
     display: none !important;
   }
 
-  /* -- CARD -- */
+  /* Cards */
   .card {
     box-shadow: none !important;
     border: 1px solid #000 !important;
     break-inside: avoid;
+  }
+  .card-body {
+    padding: 0.25rem !important;
   }
   .card,
   .card-body,
@@ -148,27 +146,27 @@ nav {
   p {
     page-break-inside: avoid;
   }
-  .card-body {
-    padding: 0.25rem !important;
-  }
-  /* -- LISTS -- */
+
+  /* Lists */
   .list-group-item {
     border: none !important;
     padding-left: 0 !important;
     color: #000 !important;
   }
 
-  /* -- LINK -- */
+  /* Links */
   a {
     color: #000 !important;
     text-decoration: none !important;
   }
 
-  /* -- SECTIONS -- */
+  /* Sections */
   .break {
     break-inside: avoid;
     page-break-after: always;
   }
+
+  /* Utility resets */
   .bg-light,
   .bg-dark,
   .bg-primary,
@@ -177,14 +175,13 @@ nav {
     color: #000 !important;
   }
 
-  /* -- SHADOW -- */
   .shadow,
   .shadow-sm,
   .shadow-lg {
     box-shadow: none !important;
   }
 
-  /* -- COLUMNS -- */
+  /* Columns */
   .col-md-4,
   .col-sm-6 {
     float: none !important;
@@ -192,25 +189,13 @@ nav {
     margin-bottom: 10px !important;
   }
 
-  /* BUTTON */
-  /* .btn-outline-secondary.disabled {
-    color: #000 !important;
-    border-color: #000 !important;
-    background-color: #fff !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    font-size: 0.6rem !important;
-    padding: 0.25rem 0.4rem !important;
-  } */
+  /* Buttons simplified */
   .btn {
-    all: unset !important; /* Supprime tout le style bouton */
+    all: unset !important;
     display: inline !important;
     font-size: 0.9rem !important;
     color: #000 !important;
     font-weight: normal !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
   }
   .btn::after {
     content: ", ";
