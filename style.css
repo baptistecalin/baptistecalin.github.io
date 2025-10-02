@@ -59,6 +59,22 @@ nav {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+.personal-info {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 1rem 0;
+}
+
+.personal-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.personal-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .personal-info p {
   margin-bottom: 0.3rem;
   font-size: 0.95rem;
@@ -118,6 +134,11 @@ nav {
   }
   .header-bg::before {
     display: none !important;
+  }
+  .personal-info {
+    border-top: 2px solid black !important;
+    border-bottom: 2px solid black !important;
+    padding: 0.5rem 0 !important;
   }
   .personal-info a {
     color: #000 !important;
