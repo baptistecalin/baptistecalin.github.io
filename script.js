@@ -16,6 +16,7 @@ const printBtn = document.getElementById("printCV");
 const downloadBtn = document.getElementById("downloadBtn");
 const langToggle = document.getElementById("langToggle");
 const profileToggle = document.getElementById("profileToggle");
+const freelancer = document.getElementById("freelancer");
 const websiteInfo = document.getElementById("websiteInfo");
 
 const profileTitle = document.getElementById("profileTitle");
@@ -268,6 +269,8 @@ function renderAll() {
   const prof = data[currentProfile] || { title: "", summary: "" };
   profileTitle.textContent = prof.title || "";
   profileSummary.innerHTML = prof.summary || "";
+
+  freelancer.textContent = data.freelancer || "Freelancer";
 
   // Soft skills
   renderList(
