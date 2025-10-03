@@ -16,6 +16,7 @@ const printBtn = document.getElementById("printCV");
 const downloadBtn = document.getElementById("downloadBtn");
 const langToggle = document.getElementById("langToggle");
 const profileToggle = document.getElementById("profileToggle");
+const websiteInfo = document.getElementById("websiteInfo");
 
 const profileTitle = document.getElementById("profileTitle");
 const profileSummary = document.getElementById("profileSummary");
@@ -325,6 +326,12 @@ downloadBtn.addEventListener("click", () => {
   link.href = `assets/cv/${fileName}`;
   link.download = fileName;
   link.click();
+});
+
+websiteInfo.addEventListener("click", (e) => {
+  alert(data.alreadyThere);
+  e.preventDefault();
+  return;
 });
 
 // ===================================
