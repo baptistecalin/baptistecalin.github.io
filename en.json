@@ -2,6 +2,7 @@
   "navbar": {
     "qualityProfile": "Quality Expert",
     "softwareProfile": "Software Engineer",
+    "testManagerProfile": "Test Manager",
     "print": "Print CV",
     "download": "Download CV"
   },
@@ -104,7 +105,8 @@
       { "id": 63, "category": "Platform", "name": "Linux" },
       { "id": 64, "category": "Platform", "name": "Ainsible" },
       { "id": 65, "category": "Platform", "name": "AWS" },
-      { "id": 66, "category": "Platform", "name": "CI/CD" }
+      { "id": 66, "category": "Platform", "name": "CI/CD" },
+      { "id": 67, "category": "Development", "name": "Python" }
     ]
   },
   "quality": {
@@ -168,7 +170,51 @@
         "location": "Namur",
         "skills": [
           4, 6, 7, 11, 12, 15, 17, 24, 28, 36, 37, 39, 40, 41, 42, 43, 47, 48,
-          50, 51, 64, 65, 66
+          50, 51, 64, 65, 66, 67
+        ]
+      },
+      {
+        "role": "Quality Expert",
+        "company": "ZORGI",
+        "period": "Jun 2019 - Apr 2023",
+        "description": "Medical Device Project management - Quality Management System implementation under Medical Device Directive (93/42/EEC) and Medical Device Regulatory (EU) 2017/745 - SaMD: Technical files consolidation - Certification ISO 13485 - Training Management - Records management - Authority and Notify body communication - ISO 13485 Quality Management System connection with ISO9001 and ISO27001 - Quality Management System connection with ITIL 4 practices - GDPR Project management + GDPR connection with ISO27001",
+        "location": "Heverlee",
+        "skills": [3, 4, 6, 7, 8, 9, 36, 37, 38, 48, 66]
+      },
+      {
+        "role": "Test & Release Manager",
+        "company": "Xperthis group",
+        "period": "Jun 2020 - Jun 2021",
+        "description": "Release software management Deployment planning - Test automation strategy and implementation - Quality Software management (Quality Assurance, Control, Managemnet) - Downtime management of IT System - Team management",
+        "location": "Nivelles",
+        "skills": [3, 4, 6, 7, 8, 9, 11, 22, 23, 27, 28, 36, 37, 40, 48, 50, 66]
+      },
+      {
+        "role": "Solution Architect - Software Engineer",
+        "company": "Xperthis group",
+        "period": "Mar 2006 - Jun 2019",
+        "description": "Product management & Architect for a web-based healthcare application: Electronic Patient Record (EPR) - Saas Solution for Portail Patient Application - Set of teams coordinator and Team management - Incident consultant and helpdesk management",
+        "location": "Nivelles",
+        "skills": [
+          5, 6, 7, 8, 9, 11, 14, 16, 18, 19, 25, 26, 28, 29, 30, 31, 35, 36, 37,
+          40, 45, 46, 48, 61, 62, 63, 66
+        ]
+      }
+    ]
+  },
+  "test-manager": {
+    "title": "Test Manager",
+    "summary": "With over 15 years of experience in software engineering and quality management, I bring strong expertise in release management, deployment planning, test automation strategy, and quality assurance.<br/>>My focus is on ensuring system reliability, performance, and maintainability while fostering continuous improvement and effective collaboration across technical, QA, and business teams.<br/><br/>Areas of Expertise:<br/>- Release & Deployment Management: Planning and coordinating software releases, managing deployment windows and environments, monitoring incidents, and minimizing system downtime.<br/>- Test Automation Strategy & Implementation: Designing and implementing automated testing frameworks (JUnit, Selenium, Jest, Karma), integrating them within CI/CD pipelines (GitLab, Jenkins) to ensure functional coverage and regression control.<br/>- Quality Software Management: Establishing and maintaining QA, QC, and QMS processes aligned with performance, security, and compliance standards (ISO, ITIL, DevSecOps).<br/>- Team Leadership & Continuous Improvement: Leading cross-functional teams, fostering technical excellence, managing release schedules, and driving quality KPIs to enhance efficiency and product stability.<br/><br/>Tools & Technologies:<br/>GitLab • Jenkins • Docker • SonarQube • PowerBI • AWS • Java • Node.js • React • Spring Boot • SQL<br/><br/>Professional Vision:<br/>My goal is to deliver reliable, secure, and maintainable software solutions by aligning release, testing, and quality management practices with business priorities.<br/>I strive to optimize release cycles, reduce downtime, and establish robust quality frameworks that ensure long-term system integrity and customer satisfaction.",
+    "experience": [
+      {
+        "role": "Quality Expert",
+        "company": "SPW - Freelance",
+        "period": "Apr 2023 - Sept 2025",
+        "description": "Application Lifecycle Management (ALM) with ISO 12207 - Analysis of the standard and identification of actions to be implemented - Project: Participation in setting up a development factory and CI/CD chain implementation at the SPW - SonarQube: Implementation of the tool in conjunction with the MoE project's DevSecOps team and developers teams",
+        "location": "Namur",
+        "skills": [
+          4, 6, 7, 11, 12, 15, 17, 24, 28, 36, 37, 39, 40, 41, 42, 43, 47, 48,
+          50, 51, 64, 65, 66, 67
         ]
       },
       {

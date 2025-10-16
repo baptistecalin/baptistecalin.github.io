@@ -252,14 +252,23 @@ function renderExperience(experiences, categories) {
 function renderAll() {
   // Navbar
   langToggle.textContent = currentLang === "en" ? "FR" : "EN";
-  profileToggle.textContent =
-    currentProfile === "quality" ? "Software" : "Quality";
+  // profileToggle.textContent =
+  //   currentProfile === "quality" ? "Software" : "Quality";
 
   if (data.navbar) {
-    profileToggle.textContent =
-      currentProfile === "quality"
-        ? data.navbar.softwareProfile
-        : data.navbar.qualityProfile || profileToggle.textContent;
+    // profileToggle.textContent =
+    //   currentProfile === "quality"
+    //     ? data.navbar.softwareProfile
+    //     : data.navbar.qualityProfile || profileToggle.textContent;
+    const options = {
+      software: data.navbar.softwareProfile || "Software",
+      quality: data.navbar.qualityProfile || "Quality",
+      "test-manager": data.navbar.testManagerProfile || "Test Manager",
+    };
+    Array.from(profileToggle.options).forEach((opt) => {
+      opt.textContent = options[opt.value];
+    });
+    profileToggle.value = currentProfile;
 
     printBtn.textContent = data.navbar.print || printBtn.textContent;
     downloadBtn.textContent = data.navbar.download || downloadBtn.textContent;
@@ -316,10 +325,15 @@ langToggle.addEventListener("click", () => {
   loadAll(nextLang);
 });
 
-profileToggle.addEventListener("click", () => {
-  currentProfile = currentProfile === "quality" ? "software" : "quality";
+profileToggle.addEventListener("change", () => {
+  // currentProfile = currentProfile === "quality" ? "software" : "quality";
+  currentProfile = profileToggle.value;
   renderAll();
 });
+// profileToggle.addEventListener("click", () => {
+//   currentProfile = currentProfile === "quality" ? "software" : "quality";
+//   renderAll();
+// });
 
 printBtn.addEventListener("click", () => window.print());
 
