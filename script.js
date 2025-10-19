@@ -264,6 +264,9 @@ function renderAll() {
       software: data.navbar.softwareProfile || "Software",
       quality: data.navbar.qualityProfile || "Quality",
       "test-manager": data.navbar.testManagerProfile || "Test Manager",
+      "project-manager": data.navbar.projectManagerProfile || "Project Manager",
+      "software-quality":
+        data.navbar.softwareQualityProfile || "Software & Quality",
     };
     Array.from(profileToggle.options).forEach((opt) => {
       opt.textContent = options[opt.value];
@@ -326,14 +329,9 @@ langToggle.addEventListener("click", () => {
 });
 
 profileToggle.addEventListener("change", () => {
-  // currentProfile = currentProfile === "quality" ? "software" : "quality";
   currentProfile = profileToggle.value;
   renderAll();
 });
-// profileToggle.addEventListener("click", () => {
-//   currentProfile = currentProfile === "quality" ? "software" : "quality";
-//   renderAll();
-// });
 
 printBtn.addEventListener("click", () => window.print());
 
