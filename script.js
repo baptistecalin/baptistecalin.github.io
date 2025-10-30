@@ -2,7 +2,7 @@
 // CONFIG & STATE
 // ===================================
 const DEFAULT_LANG = "en";
-const DEFAULT_PROFILE = "software";
+const DEFAULT_PROFILE = "quality";
 
 let currentLang = DEFAULT_LANG;
 let currentProfile = DEFAULT_PROFILE;
