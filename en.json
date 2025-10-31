@@ -5,6 +5,8 @@
     "testManagerProfile": "Test Manager",
     "projectManagerProfile": "Project Manager",
     "softwareQualityProfile": "Software Engineer - Quality Expert",
+    "businessAnalystProfile": "IT Business Analyst | Quality & Digital Transformation Expert",
+    "allProfile": "Profile",
     "print": "Print CV",
     "download": "Download CV"
   },
@@ -108,7 +110,10 @@
       { "id": 64, "category": "Platform", "name": "Ainsible" },
       { "id": 65, "category": "Platform", "name": "AWS" },
       { "id": 66, "category": "Platform", "name": "CI/CD" },
-      { "id": 67, "category": "Development", "name": "Python" }
+      { "id": 67, "category": "Development", "name": "Python" },
+      { "id": 68, "category": "Tools", "name": "Bizagi Modeler" },
+      { "id": 69, "category": "Tools", "name": "Visual Paradigm" },
+      { "id": 70, "category": "Processes", "name": "Dev(Sec)Ops" }
     ]
   },
   "quality": {
@@ -303,7 +308,7 @@
         "location": "Namur",
         "skills": [
           1, 3, 4, 5, 7, 11, 12, 15, 17, 24, 28, 36, 37, 38, 39, 40, 41, 42, 43,
-          47, 48, 49, 50, 51, 55, 57, 64, 65, 66, 67
+          47, 48, 49, 50, 51, 55, 57, 64, 65, 66, 67, 70
         ]
       },
       {
@@ -336,6 +341,100 @@
         "skills": [
           3, 4, 5, 7, 8, 9, 11, 14, 16, 18, 19, 25, 26, 28, 29, 30, 31, 35, 36,
           37, 40, 45, 46, 48, 55, 58, 59, 61, 62, 63, 66
+        ]
+      }
+    ]
+  },
+  "business-analyst": {
+    "title": "IT Business Analyst | Quality & Digital Transformation Expert",
+    "summary": "With over 15 years of experience at the intersection of business process analysis, quality management, and software engineering, I specialize in aligning business needs with IT solutions across regulated and complex environments.<br/><br/>My background combines strong analytical and modelling skills (BPMN, UML, use case and entity-relationship modelling) with hands-on software development expertise in Java, Spring, REST APIs, and CI/CD automation.<br/><br/>I bring a deep understanding of Agile methodologies, process optimization, and digital transformation within both public administrations and healthcare technology organizations. This dual technical–functional profile allows me to act as a bridge between business and IT, ensuring that systems design, requirements documentation, and implementation are fully aligned with organizational goals, regulatory constraints, and user needs.<br/><br/>Core Competencies:<br/>- Business Analysis & Modelling (Requirements gathering, process mapping (BPMN/UML), business case definition, risk analysis)<br/>- Process Improvement (QMS optimization (ISO 9001, ISO 13485, ITIL 4), KPI dashboards, continuous improvement)<br/>- Digital Transformation (ALM, CI/CD, automation, and DevSecOps integration)<br/>- Stakeholder Management (Workshops, cross-functional collaboration, EU policy alignment)<br/>- Tools & Methods (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS)",
+    "experience": [
+      {
+        "role": "Driving Quality and Digital Transformation",
+        "company": "Quality Expert (SPW - Freelance)",
+        "period": "Apr 2023 - Sept 2025",
+        "description": "As part of the digital transformation of the Walloon Public Service (SPW), I acted as a IT Business Analyst bridging business processes, quality governance, and software delivery optimization. My role combined requirements analysis, process modelling, and DevSecOps alignment to strengthen IT governance and performance.<br/><br/><b>Key Achievements:</b><br/><ul><li>Led the analysis and implementation of an ISO 12207-compliant development factory, improving process transparency and compliance.</li><li>Conducted business process modelling and documentation (BPMN) to harmonize development workflows with organizational strategy.</li><li>Performed Application Lifecycle Management (ALM) standardization aligned with ISO 12207, ensuring consistent lifecycle and quality practices across software projects.</li><li>Collaborated with the DevSecOps and development teams to implement SonarQube, integrate CI/CD pipelines (GitLab, Jenkins), and automate quality controls.</li><li>Supported the creation of a development factory, establishing a foundation for continuous improvement and scalable digital delivery.</li><li>Facilitated cross-department collaboration using Agile and ITIL 4 practices, promoting communication between business stakeholders, project managers, and technical teams.</li></ul>",
+        "location": "Namur",
+        "skills": [
+          1, 3, 4, 5, 7, 36, 37, 38, 39, 40, 42, 43, 48, 49, 51, 55, 57, 65, 66,
+          68, 70
+        ]
+      },
+      {
+        "role": "Aligning Business, Compliance, and Technology in Healthcare IT",
+        "company": "Quality Expert (ZORGI)",
+        "period": "Jun 2019 - Apr 2023",
+        "description": "Within ZORGI’s Quality division, I acted as a Business Analyst and Quality Expert responsible for aligning regulatory compliance with operational and software delivery processes. I supported the implementation and continuous improvement of the ISO 13485-certified Quality Management System (QMS) for medical software (SaMD), ensuring full compliance with EU MDR and GDPR requirements.<br/><br/><b>Key Achievements:</b><br><ul><li>Designed, implemented, and maintained an ISO 13485-compliant QMS, integrating it with ISO 9001 and ISO 27001 to ensure unified quality, security, and compliance governance.</li><li>Conducted functional risk analyses, process modelling, and business alignment workshops to bridge regulatory, operational, and IT perspectives.</li><li>Authored and maintained regulatory and functional documentation, including Project Charters, Risk Analyses, Security Plans, and technical files required for MDR compliance and notified body audits.</li><li>Managed GDPR integration within the QMS framework, linking data protection requirements with IT security practices (ISO 27001).</li><li>Established KPIs and dashboards in PowerBI and eQMS to track compliance, process performance, and training effectiveness.</li><li>Facilitated training sessions and cross-team collaboration, ensuring shared ownership of quality and compliance objectives.</li><li>Acted as liaison between development, QA, and compliance teams, promoting a culture of continuous improvement and audit readiness.</li></ul>",
+        "location": "Heverlee",
+        "skills": [
+          1, 3, 4, 5, 7, 10, 36, 37, 38, 44, 48, 49, 52, 53, 56, 57, 66, 68, 70
+        ]
+      },
+      {
+        "role": "Ensuring Quality Delivery through Agile Release Management",
+        "company": "Test & Release Manager (Xperthis group)",
+        "period": "Jun 2020 - Jun 2021",
+        "description": "Within ZORGI’s Test division, I played a dual role as Business Analyst and Release Manager, ensuring the quality, reliability, and traceability of software deployments across multiple production environments. My focus was on process optimization, test automation, and risk-based release planning to support critical healthcare operations.<br/><br/><b>Key Achievements:</b><ul><li>Defined and led the release management strategy, establishing structured processes for software delivery and deployment across healthcare systems.</li><li>Designed and implemented a test automation framework integrated into CI/CD pipelines, reducing regression times and improving release confidence.</li><li>Conducted risk analyses and release impact assessments, ensuring business continuity and minimal downtime during production rollouts.</li><li>Introduced Agile QA frameworks and continuous validation processes, improving feedback loops between development, testing, and operations teams.</li><li>Developed and tracked key quality metrics and KPIs to evaluate readiness, compliance, and system stability.</li><li>Facilitated coordination between cross-functional teams (Dev, Ops, QA, Product Owners) to streamline communication and decision-making during releases.</li></ul>",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 7, 11, 18, 28, 22, 27, 36, 37, 38, 40, 48, 50, 60, 66, 70
+        ]
+      },
+      {
+        "role": "Bridging Business Needs and Technical Delivery for eHealth Solutions",
+        "company": "Solution Architect - Software Engineer (Xperthis group)",
+        "period": "Mar 2006 - Jun 2019",
+        "description": "Over more than a decade at ZORGI, I contributed to the design, development, and continuous improvement of an Electronic Patient Record (EPR) platform used across hospitals and healthcare networks. Acting as both Business Analyst and Solution Architect, I served as a key link between business stakeholders, development teams, and quality management.<br/><br/><b>Key Achievements:</b><ul><li>Led the architecture and functional analysis of a web-based EPR and Patient Portal (SaaS model), ensuring scalability, interoperability, and compliance with healthcare regulations.</li><li>Conducted requirements gathering and business process analysis with clinical teams, translating operational needs into clear technical specifications and user journeys.</li><li>Facilitated stakeholder workshops to model workflows, optimize usability, and define the product vision and roadmap.</li><li>- Ensured regulatory and standards compliance (ISO 62304, ISO 82304, ISO 12207) throughout the software development lifecycle.</li><li>Managed and coordinated multiple cross-functional development teams, promoting Agile practices and process standardization across the organization.</li><li>Supported incident management and helpdesk coordination, improving end-user experience and service reliability.</li></ul>",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 5, 7, 11, 18, 28, 36, 37, 40, 48, 55, 58, 59, 66, 69, 70
+        ]
+      }
+    ]
+  },
+  "all": {
+    "title": "",
+    "summary": "With over 15 years of experience at the intersection of business process analysis, quality management, and software engineering, I specialize in aligning business needs with IT solutions across regulated and complex environments.<br/><br/>I started my career as a full-stack software engineer, building scalable web applications with Java. Over time, I expanded into test engineering, DevSecOps, and CI/CD automation, ensuring that solutions are not only innovative but also high-quality, robust and secure.<br/><br/>My background combines strong analytical and modelling skills (BPMN, UML, use case and entity-relationship modelling) with practical expertise in software development and business process management.<br/><br/>I bring a deep understanding of Agile methodologies, process optimization, and digital transformation within both public administrations and healthcare technology organizations. This dual technical–functional profile allows me to act as a bridge between business and IT, ensuring that systems design, requirements documentation, and implementation are fully aligned with organizational goals, regulatory constraints, and user needs.<br/><br/>Core Competencies:<br/>- Business Analysis & Modelling (Requirements gathering, process mapping (BPMN/UML), business case definition, risk analysis)<br/>- Process Improvement (QMS optimization (ISO 9001, ISO 13485, MDR, ISO 27001, ITIL 4, GDPR), KPI dashboards, continuous improvement, and integration with buisness processes)<br/>- Digital Transformation (ALM, CI/CD, automation, and DevSecOps integration)<br/>- Stakeholder Management (Workshops, cross-functional collaboration, EU policy alignment, Teamleader)<br/>- Tools & Methods (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS, Sonarqube)<br/>- Development & Test (Java, SQL, JUnit/TestNG, Selenium)",
+    "experience": [
+      {
+        "role": "Driving Quality and Digital Transformation",
+        "company": "Quality Expert (SPW - Freelance)",
+        "period": "Apr 2023 - Sept 2025",
+        "description": "As part of the digital transformation of the Walloon Public Service (SPW), I acted as a IT Business Analyst bridging business processes, quality governance, and software delivery optimization. My role combined requirements analysis, process modelling, and DevSecOps alignment to strengthen IT governance and performance.<br/><br/><b>Key Achievements:</b><br/><ul><li>Led the analysis and implementation of an ISO 12207-compliant development factory, improving process transparency and compliance.</li><li>Conducted business process modelling and documentation (BPMN) to harmonize development workflows with organizational strategy.</li><li>Performed Application Lifecycle Management (ALM) standardization aligned with ISO 12207, ensuring consistent lifecycle and quality practices across software projects.</li><li>Collaborated with the DevSecOps and development teams to implement SonarQube, integrate CI/CD pipelines (GitLab, Jenkins), and automate quality controls.</li><li>Supported the creation of a development factory, establishing a foundation for continuous improvement and scalable digital delivery.</li><li>Facilitated cross-department collaboration using Agile and ITIL 4 practices, promoting communication between business stakeholders, project managers, and technical teams.</li></ul>",
+        "location": "Namur",
+        "skills": [
+          1, 3, 4, 5, 7, 36, 37, 38, 39, 40, 42, 43, 48, 49, 51, 55, 57, 65, 66,
+          68, 70
+        ]
+      },
+      {
+        "role": "Aligning Business, Compliance, and Technology in Healthcare IT",
+        "company": "Quality Expert (ZORGI)",
+        "period": "Jun 2019 - Apr 2023",
+        "description": "Within ZORGI’s Quality division, I acted as a Business Analyst and Quality Expert responsible for aligning regulatory compliance with operational and software delivery processes. I supported the implementation and continuous improvement of the ISO 13485-certified Quality Management System (QMS) for medical software (SaMD), ensuring full compliance with EU MDR and GDPR requirements.<br/><br/><b>Key Achievements:</b><br><ul><li>Designed, implemented, and maintained an ISO 13485-compliant QMS, integrating it with ISO 9001 and ISO 27001 to ensure unified quality, security, and compliance governance.</li><li>Conducted functional risk analyses, process modelling, and business alignment workshops to bridge regulatory, operational, and IT perspectives.</li><li>Authored and maintained regulatory and functional documentation, including Project Charters, Risk Analyses, Security Plans, and technical files required for MDR compliance and notified body audits.</li><li>Managed GDPR integration within the QMS framework, linking data protection requirements with IT security practices (ISO 27001).</li><li>Established KPIs and dashboards in PowerBI and eQMS to track compliance, process performance, and training effectiveness.</li><li>Facilitated training sessions and cross-team collaboration, ensuring shared ownership of quality and compliance objectives.</li><li>Acted as liaison between development, QA, and compliance teams, promoting a culture of continuous improvement and audit readiness.</li></ul>",
+        "location": "Heverlee",
+        "skills": [
+          1, 3, 4, 5, 7, 10, 36, 37, 38, 44, 48, 49, 52, 53, 56, 57, 66, 68, 70
+        ]
+      },
+      {
+        "role": "Ensuring Quality Delivery through Agile Release Management",
+        "company": "Test & Release Manager (Xperthis group)",
+        "period": "Jun 2020 - Jun 2021",
+        "description": "Within ZORGI’s Test division, I played a dual role as Business Analyst and Release Manager, ensuring the quality, reliability, and traceability of software deployments across multiple production environments. My focus was on process optimization, test automation, and risk-based release planning to support critical healthcare operations.<br/><br/><b>Key Achievements:</b><ul><li>Defined and led the release management strategy, establishing structured processes for software delivery and deployment across healthcare systems.</li><li>Designed and implemented a test automation framework integrated into CI/CD pipelines, reducing regression times and improving release confidence.</li><li>Conducted risk analyses and release impact assessments, ensuring business continuity and minimal downtime during production rollouts.</li><li>Introduced Agile QA frameworks and continuous validation processes, improving feedback loops between development, testing, and operations teams.</li><li>Developed and tracked key quality metrics and KPIs to evaluate readiness, compliance, and system stability.</li><li>Facilitated coordination between cross-functional teams (Dev, Ops, QA, Product Owners) to streamline communication and decision-making during releases.</li></ul>",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 7, 11, 18, 28, 22, 27, 36, 37, 38, 40, 48, 50, 60, 66, 70
+        ]
+      },
+      {
+        "role": "Bridging Business Needs and Technical Delivery for eHealth Solutions",
+        "company": "Solution Architect - Software Engineer (Xperthis group)",
+        "period": "Mar 2006 - Jun 2019",
+        "description": "Over more than a decade at ZORGI, I contributed to the design, development, and continuous improvement of an Electronic Patient Record (EPR) platform used across hospitals and healthcare networks. Acting as both Business Analyst and Solution Architect, I served as a key link between business stakeholders, development teams, and quality management.<br/><br/><b>Key Achievements:</b><ul><li>Led the architecture and functional analysis of a web-based EPR and Patient Portal (SaaS model), ensuring scalability, interoperability, and compliance with healthcare regulations.</li><li>Conducted requirements gathering and business process analysis with clinical teams, translating operational needs into clear technical specifications and user journeys.</li><li>Facilitated stakeholder workshops to model workflows, optimize usability, and define the product vision and roadmap.</li><li>Ensured regulatory and standards compliance (ISO 62304, ISO 82304, ISO 12207) throughout the software development lifecycle.</li><li>Managed and coordinated multiple cross-functional development teams, promoting Agile practices and process standardization across the organization.</li><li>Supported incident management and helpdesk coordination, improving end-user experience and service reliability.</li></ul>",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 5, 7, 11, 18, 28, 36, 37, 40, 48, 55, 58, 59, 66, 69, 70
         ]
       }
     ]

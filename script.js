@@ -2,7 +2,7 @@
 // CONFIG & STATE
 // ===================================
 const DEFAULT_LANG = "en";
-const DEFAULT_PROFILE = "quality";
+const DEFAULT_PROFILE = "all";
 
 let currentLang = DEFAULT_LANG;
 let currentProfile = DEFAULT_PROFILE;
@@ -205,7 +205,7 @@ function renderExperience(experiences, categories) {
     subTitle.textContent = `${exp.company} | ${exp.period} | ${exp.location} ${duration}`;
 
     const desc = document.createElement("p");
-    desc.textContent = exp.description || "";
+    desc.innerHTML = exp.description || "";
 
     body.appendChild(title);
     body.appendChild(subTitle);
@@ -217,7 +217,7 @@ function renderExperience(experiences, categories) {
       body.appendChild(strong);
 
       const ul = document.createElement("ul");
-      ul.className = "mt-2";
+      //ul.className = "mt-2";
 
       const categorized = categorizeSkills(exp.skills, categories);
       Object.entries(categorized).forEach(([cat, skills]) => {
@@ -267,6 +267,9 @@ function renderAll() {
       "project-manager": data.navbar.projectManagerProfile || "Project Manager",
       "software-quality":
         data.navbar.softwareQualityProfile || "Software & Quality",
+      "business-analyst":
+        data.navbar.businessAnalystProfile || "Business Analyst",
+      all: data.navbar.allProfile || "All",
     };
     Array.from(profileToggle.options).forEach((opt) => {
       opt.textContent = options[opt.value];

@@ -5,6 +5,8 @@
     "testManagerProfile": "Test Manager",
     "projectManagerProfile": "Project Manager",
     "softwareQualityProfile": "Ingénieur Logiciel - Expert Qualité",
+    "businessAnalystProfile": "Analyste informatique | Expert en qualité et transformation numérique",
+    "allProfile": "Profil",
     "print": "Imprimer le CV",
     "download": "Télécharger le CV"
   },
@@ -116,7 +118,9 @@
       { "id": 64, "category": "Platform", "name": "Ainsible" },
       { "id": 65, "category": "Platform", "name": "AWS" },
       { "id": 66, "category": "Platform", "name": "CI/CD" },
-      { "id": 67, "category": "Development", "name": "Python" }
+      { "id": 67, "category": "Development", "name": "Python" },
+      { "id": 68, "category": "Tools", "name": "Bizagi Modeler" },
+      { "id": 69, "category": "Tools", "name": "Visual Paradigm" }
     ]
   },
   "quality": {
@@ -344,6 +348,102 @@
         "skills": [
           3, 4, 5, 7, 8, 9, 11, 14, 16, 18, 19, 25, 26, 28, 29, 30, 31, 35, 36,
           37, 40, 45, 46, 48, 58, 59, 61, 62, 63, 66
+        ]
+      }
+    ]
+  },
+  "buisness-analyst": {
+    "title": "Analyste informatique | Expert en qualité et transformation numérique",
+    "summary": "Avec plus de 15 ans d'expérience à la croisée de l'analyse des processus métier, de la gestion de la qualité et du génie logiciel, je me spécialise dans l'alignement des besoins métier avec les solutions informatiques dans des environnements réglementés et complexes. <br/><br/>Mon parcours combine de solides compétences en analyse et en modélisation (BPMN, UML, modélisation des cas d'utilisation et des relations entre entités) avec une expertise pratique en développement logiciel dans Java, Spring, les API REST et l'automatisation CI/CD. <br/><br/>J'apporte une connaissance approfondie des méthodologies Agile, de l'optimisation des processus et de la transformation numérique au sein des administrations publiques et des organisations technologiques du secteur de la santé. Ce double profil technique et fonctionnel me permet d'agir comme un pont entre les entreprises et l'informatique, en veillant à ce que la conception des systèmes, la documentation des exigences et la mise en œuvre soient pleinement alignées sur les objectifs organisationnels, les contraintes réglementaires et les besoins des utilisateurs.",
+    "experience": [
+      {
+        "role": "Expert Qualité",
+        "company": "SPW - Freelance",
+        "period": "Apr 2023 - Sept 2025",
+        "description": "Système de gestion de la qualité (SGQ) avec ISO 9001 et gestion du cycle de vie des applications (ALM) avec ISO 12207 - Analyse de la norme et identification des actions à mettre en œuvre - Projet : Participation à la mise en place d'une usine de développement et à la mise en œuvre d'une chaîne CI/CD au SPW - SonarQube : Mise en œuvre de l'outil en collaboration avec l'équipe DevSecOps du projet MoE et les équipes de développeurs",
+        "location": "Namur",
+        "skills": [
+          1, 3, 4, 5, 7, 36, 37, 38, 39, 40, 42, 43, 48, 49, 51, 57, 65, 66, 68
+        ]
+      },
+      {
+        "role": "Expert Qualité",
+        "company": "ZORGI",
+        "period": "Jun 2019 - Apr 2023",
+        "description": "Gestion de projets liés aux dispositifs médicaux - Mise en œuvre d'un système de gestion de la qualité conformément à la directive relative aux dispositifs médicaux (93/42/CEE) et au règlement (UE) 2017/745 relatif aux dispositifs médicaux - SaMD : consolidation des dossiers techniques - Certification ISO 13485 - Gestion de la formation - Gestion des enregistrements - Communication avec les autorités et les organismes notifiés - Connexion du système de gestion de la qualité ISO 13485 avec les normes ISO9001 et ISO27001 - Connexion du système de gestion de la qualité avec les pratiques ITIL 4 - Gestion de projet RGPD + connexion RGPD avec la norme ISO27001",
+        "location": "Heverlee",
+        "skills": [
+          1, 3, 4, 5, 7, 8, 9, 10, 36, 37, 38, 44, 48, 49, 52, 53, 56, 57, 66,
+          68
+        ]
+      },
+      {
+        "role": "Test & Release Manager",
+        "company": "Xperthis group",
+        "period": "Jun 2020 - Jun 2021",
+        "description": "Gestion des versions logicielles - Planning de deploiement - Stratégie et mise en œuvre de l'automatisation des tests - Gestion de la qualité logicielle (assurance qualité, contrôle, gestion) - Gestion des temps d'arrêt des systèmes informatiques - Gestion d'équipe",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 7, 8, 9, 11, 16, 22, 23, 27, 28, 36, 37, 38, 40, 45, 48, 50, 60,
+          66
+        ]
+      },
+      {
+        "role": "Solution Architect - Software Engineer",
+        "company": "Xperthis group",
+        "period": "Mar 2006 - Jun 2019",
+        "description": "Gestion de produit et architecture pour une application web dédiée à la santé : dossier médical électronique (DME) - solution SaaS pour l'application Portail Patient - coordination d'équipes et gestion d'équipe - consultant en incidents et gestion du service d'assistance",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 5, 7, 8, 9, 11, 14, 16, 18, 19, 25, 26, 28, 29, 30, 31, 35, 36,
+          37, 40, 45, 46, 48, 58, 59, 61, 62, 63, 66, 69
+        ]
+      }
+    ]
+  },
+  "all": {
+    "title": "",
+    "summary": "Avec plus de 15 ans d'expérience à la croisée de l'analyse des processus métier, de la gestion de la qualité et du génie logiciel, je me spécialise dans l'alignement des besoins métier avec les solutions informatiques dans des environnements réglementés et complexes. <br/><br/>J'ai commencé ma carrière en tant qu'ingénieur logiciel full-stack, en développant des applications web évolutives avec Java. Au fil du temps, j'ai élargi mes compétences à l'ingénierie de test, au DevSecOps et à l'automatisation CI/CD, afin de garantir que les solutions soient non seulement innovantes, mais aussi de haute qualité, robustes et sécurisées. <br/><br/>Mon parcours combine de solides compétences en analyse et en modélisation (BPMN, UML, modélisation de cas d'utilisation et d'entités-relations) avec une expertise pratique en développement logiciel et en gestion des processus métier. <br/><br/>J'apporte une connaissance approfondie des méthodologies Agile, de l'optimisation des processus et de la transformation numérique au sein des administrations publiques et des organisations technologiques du secteur de la santé. Ce double profil technique et fonctionnel me permet d'agir comme un pont entre les entreprises et les technologies de l'information, en veillant à ce que la conception des systèmes, la documentation des exigences et la mise en œuvre soient pleinement alignées sur les objectifs organisationnels, les contraintes réglementaires et les besoins des utilisateurs.<br/><br/>Compétences clés :<br/>- Analyse et modélisation commerciales (recueil des besoins, cartographie des processus (BPMN/UML), définition des analyses de rentabilité, analyse des risques)<br/> - Amélioration des processus (optimisation du système de gestion de la qualité (ISO 9001, ISO 13485, MDR, ISO 27001, ITIL 4, RGPD), tableaux de bord KPI, amélioration continue et intégration aux processus métier)<br/>- Transformation numérique (ALM, CI/CD, automatisation et intégration DevSecOps)<br/> - Gestion des parties prenantes (ateliers, collaboration interfonctionnelle, alignement sur les politiques de l'UE, Teamleader)<br/>- Outils et méthodes (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS, Sonarqube)<br/>- Développement et test (Java, SQL, JUnit/TestNG, Selenium)",
+    "experience": [
+      {
+        "role": "Améliorer la qualité et la transformation numérique",
+        "company": "Quality Expert (SPW - Freelance)",
+        "period": "Apr 2023 - Sept 2025",
+        "description": "Dans le cadre de la transformation numérique du Service public de Wallonie (SPW), j'ai occupé le poste d'analyste informatique, assurant la liaison entre les processus métier, la gouvernance de la qualité et l'optimisation de la livraison des logiciels. Mon rôle combinait l'analyse des besoins, la modélisation des processus et l'alignement DevSecOps afin de renforcer la gouvernance et les performances informatiques. <br/><br/><b>Principales réalisations :</b><br/><ul><li>J'ai dirigé l'analyse et la mise en œuvre d'une usine de développement conforme à la norme ISO 12207, améliorant ainsi la transparence et la conformité des processus. </li><li>J'ai réalisé la modélisation et la documentation des processus métier (BPMN) afin d'harmoniser les workflows de développement avec la stratégie organisationnelle. </li><li>J'ai procédé à la normalisation de la gestion du cycle de vie des applications (ALM) conformément à la norme ISO 12207, garantissant ainsi la cohérence des pratiques en matière de cycle de vie et de qualité dans tous les projets logiciels. </li><li>J'ai collaboré avec les équipes DevSecOps et de développement pour mettre en œuvre SonarQube, intégrer les pipelines CI/CD (GitLab, Jenkins) et automatiser les contrôles qualité. </li><li>A soutenu la création d'une usine de développement, établissant ainsi les bases d'une amélioration continue et d'une livraison numérique évolutive. </li><li>A facilité la collaboration entre les services à l'aide des pratiques Agile et ITIL 4, favorisant la communication entre les parties prenantes commerciales, les chefs de projet et les équipes techniques. </li></ul>",
+        "location": "Namur",
+        "skills": [
+          1, 3, 4, 5, 7, 36, 37, 38, 39, 40, 42, 43, 48, 49, 51, 55, 57, 65, 66,
+          68, 70
+        ]
+      },
+      {
+        "role": "Aligner les activités, la conformité et la technologie appliquées aux soins de santé IT",
+        "company": "Quality Expert (ZORGI)",
+        "period": "Jun 2019 - Apr 2023",
+        "description": "Au sein de la division Qualité de ZORGI, j'ai occupé le poste d'analyste commercial et d'expert en qualité, chargé d'aligner la conformité réglementaire avec les processus opérationnels et de livraison de logiciels. J'ai soutenu la mise en œuvre et l'amélioration continue du système de gestion de la qualité (SGQ) certifié ISO 13485 pour les logiciels médicaux (SaMD), en garantissant la conformité totale avec les exigences du règlement MDR et du RGPD de l'UE. <br/><br/><b>Principales réalisations :</b><br><ul><li>Conception, mise en œuvre et maintenance d'un SMQ conforme à la norme ISO 13485, en l'intégrant aux normes ISO 9001 et ISO 27001 afin de garantir une gouvernance unifiée en matière de qualité, de sécurité et de conformité. </li><li>Réalisation d'analyses des risques fonctionnels, de modélisation des processus et d'ateliers d'alignement commercial afin de concilier les perspectives réglementaires, opérationnelles et informatiques. </li><li>Rédaction et mise à jour de la documentation réglementaire et fonctionnelle, y compris les chartes de projet, les analyses de risques, les plans de sécurité et les dossiers techniques requis pour la conformité au règlement MDR et les audits des organismes notifiés. </li><li>Gestion de l'intégration du RGPD dans le cadre du SMQ, en reliant les exigences en matière de protection des données aux pratiques de sécurité informatique (ISO 27001). </li><li>Mise en place d'indicateurs clés de performance et de tableaux de bord dans PowerBI et eQMS pour suivre la conformité, les performances des processus et l'efficacité des formations. </li><li>Animation de sessions de formation et de collaboration entre les équipes, afin de garantir une appropriation commune des objectifs de qualité et de conformité. </li><li>Assurance de la liaison entre les équipes de développement, d'assurance qualité et de conformité, en promouvant une culture d'amélioration continue et de préparation aux audits.</li></ul>",
+        "location": "Heverlee",
+        "skills": [
+          1, 3, 4, 5, 7, 10, 36, 37, 38, 44, 48, 49, 52, 53, 56, 57, 66, 68, 70
+        ]
+      },
+      {
+        "role": "Garantir une livraison de qualité grâce à une gestion agile des versions",
+        "company": "Test & Release Manager (Xperthis group)",
+        "period": "Jun 2020 - Jun 2021",
+        "description": "Au sein de la division Test de ZORGI, j'ai occupé un double rôle d'analyste commercial et de responsable des versions, garantissant la qualité, la fiabilité et la traçabilité des déploiements logiciels dans plusieurs environnements de production. Je me suis concentré sur l'optimisation des processus, l'automatisation des tests et la planification des versions en fonction des risques afin de soutenir les opérations critiques dans le domaine des soins de santé. <br/><br/><b>Principales réalisations :</b><ul><li>Définition et direction de la stratégie de gestion des versions, mise en place de processus structurés pour la livraison et le déploiement de logiciels dans les systèmes de santé. </li><li>Conception et mise en œuvre d'un cadre d'automatisation des tests intégré aux pipelines CI/CD, réduisant les temps de régression et améliorant la fiabilité des versions. </li><li>Réalisation d'analyses de risques et d'évaluations d'impact des versions, garantissant la continuité des activités et un temps d'arrêt minimal pendant les déploiements en production. </li><li>Introduction de cadres d'assurance qualité agiles et de processus de validation continue, améliorant les boucles de rétroaction entre les équipes de développement, de test et d'exploitation. </li><li>Développement et suivi d'indicateurs de qualité et d'indicateurs clés de performance clés pour évaluer l'état de préparation, la conformité et la stabilité du système. </li><li>Facilitation de la coordination entre les équipes interfonctionnelles (développement, exploitation, assurance qualité, propriétaires de produits) afin de rationaliser la communication et la prise de décision lors des mises en production. </li></ul>",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 7, 11, 18, 28, 22, 27, 36, 37, 38, 40, 48, 50, 60, 66, 70
+        ]
+      },
+      {
+        "role": "Concilier les besoins commerciaux et la mise en œuvre technique des solutions de santé en ligne",
+        "company": "Solution Architect - Software Engineer (Xperthis group)",
+        "period": "Mar 2006 - Jun 2019",
+        "description": "Au cours de plus d'une décennie chez ZORGI, j'ai contribué à la conception, au développement et à l'amélioration continue d'une plateforme de dossiers médicaux électroniques (DME) utilisée dans les hôpitaux et les réseaux de soins de santé. En tant qu'analyste commercial et architecte de solutions, j'ai joué un rôle clé dans la liaison entre les parties prenantes commerciales, les équipes de développement et la gestion de la qualité. <br/><br/><b>Principales réalisations :</b><ul><li>J'ai dirigé l'architecture et l'analyse fonctionnelle d'un DME et d'un portail patient basés sur le web (modèle SaaS), en garantissant l'évolutivité, l'interopérabilité et la conformité avec les réglementations en matière de soins de santé. </li><li>Réalisation d'une collecte des besoins et d'une analyse des processus métier avec les équipes cliniques, en traduisant les besoins opérationnels en spécifications techniques claires et en parcours utilisateurs. </li><li>Animation d'ateliers avec les parties prenantes afin de modéliser les flux de travail, d'optimiser la convivialité et de définir la vision et la feuille de route du produit. </li><li>Garantie de la conformité aux réglementations et aux normes (ISO 62304, ISO 82304, ISO 12207) tout au long du cycle de vie du développement logiciel. </li><li>Gestion et coordination de plusieurs équipes de développement interfonctionnelles, promotion des pratiques Agile et de la standardisation des processus dans toute l'organisation. </li><li>Soutien à la gestion des incidents et à la coordination du service d'assistance, amélioration de l'expérience utilisateur et de la fiabilité du service. </li></ul>",
+        "location": "Nivelles",
+        "skills": [
+          3, 4, 5, 7, 11, 18, 28, 36, 37, 40, 48, 55, 58, 59, 66, 69, 70
         ]
       }
     ]
