@@ -1,0 +1,55 @@
+{
+  "name": "Baptiste DevContainer",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Catppuccin.catppuccin-vsc",
+        "Catppuccin.catppuccin-vsc-icons",
+
+        "esbenp.prettier-vscode",
+        "usernamehw.errorlens",
+        "eamodio.gitlens",
+        "oderwat.indent-rainbow",
+        "christian-kohler.path-intellisense",
+        "streetsidesoftware.code-spell-checker",
+
+        "ecmel.vscode-html-css",
+        "zignd.html-css-class-completion",
+        "formulahendry.auto-rename-tag",
+        "ritwickdey.LiveServer"
+      ],
+
+      "settings": {
+        "workbench.colorTheme": "Catppuccin Mocha",
+        "workbench.iconTheme": "catppuccin-mocha",
+
+        "editor.fontFamily": "'JetBrains Mono', monospace",
+        "editor.fontLigatures": true,
+        "editor.fontSize": 14,
+
+        "editor.formatOnSave": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+
+        "editor.minimap.enabled": false,
+        "editor.stickyScroll.enabled": true,
+
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+
+        "prettier.singleQuote": true,
+        "prettier.semi": true,
+        "prettier.trailingComma": "es5",
+        "prettier.printWidth": 100
+      }
+    }
+  },
+
+  "forwardPorts": [5500],
+  "remoteUser": "vscode"
+}

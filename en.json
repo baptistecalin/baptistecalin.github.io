@@ -113,7 +113,19 @@
       { "id": 67, "category": "Development", "name": "Python" },
       { "id": 68, "category": "Tools", "name": "Bizagi Modeler" },
       { "id": 69, "category": "Tools", "name": "Visual Paradigm" },
-      { "id": 70, "category": "Processes", "name": "Dev(Sec)Ops" }
+      { "id": 70, "category": "Processes", "name": "Dev(Sec)Ops" },
+      { "id": 71, "category": "Development", "name": "JAVA 21+" },
+      { "id": 72, "category": "Development", "name": "TypeScript" },
+      { "id": 73, "category": "Development", "name": "AI/ML Integration" },
+      { "id": 74, "category": "Development", "name": "RAG" },
+      { "id": 75, "category": "Databases", "name": "MariaDB" },
+      { "id": 76, "category": "Standards", "name": "Domain-Driven Design (DDD)" },
+      { "id": 77, "category": "Standards", "name": "Event-Driven Architecture" },
+      { "id": 78, "category": "Standards", "name": "Cloud Engineering" },
+      { "id": 79, "category": "Development", "name": "Terraform" },
+      { "id": 80, "category": "Databases", "name": "Amazon Aurora" },
+      { "id": 81, "category": "Tools", "name": "Qodana" }
+
     ]
   },
   "quality": {
@@ -394,8 +406,28 @@
   },
   "all": {
     "title": "",
-    "summary": "With over 15 years of experience at the intersection of business process analysis, quality management, and software engineering, I specialize in aligning business needs with IT solutions across regulated and complex environments.<br/><br/>I started my career as a full-stack software engineer, building scalable web applications with Java. Over time, I expanded into test engineering, DevSecOps, and CI/CD automation, ensuring that solutions are not only innovative but also high-quality, robust and secure.<br/><br/>My background combines strong analytical and modelling skills (BPMN, UML, use case and entity-relationship modelling) with practical expertise in software development and business process management.<br/><br/>I bring a deep understanding of Agile methodologies, process optimization, and digital transformation within both public administrations and healthcare technology organizations. This dual technical–functional profile allows me to act as a bridge between business and IT, ensuring that systems design, requirements documentation, and implementation are fully aligned with organizational goals, regulatory constraints, and user needs.<br/><br/>Core Competencies:<br/>- Business Analysis & Modelling (Requirements gathering, process mapping (BPMN/UML), business case definition, risk analysis)<br/>- Process Improvement (QMS optimization (ISO 9001, ISO 13485, MDR, ISO 27001, ITIL 4, GDPR), KPI dashboards, continuous improvement, and integration with buisness processes)<br/>- Digital Transformation (ALM, CI/CD, automation, and DevSecOps integration)<br/>- Stakeholder Management (Workshops, cross-functional collaboration, EU policy alignment, Teamleader)<br/>- Tools & Methods (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS, Sonarqube)<br/>- Development & Test (Java, SQL, JUnit/TestNG, Selenium)",
+    "summary": "With over 15 years of experience at the intersection of business process analysis, quality management, and software engineering, I specialize in aligning business needs with IT solutions across regulated and complex environments.<br/><br/>I started my career as a full-stack software engineer, building scalable web applications with Java. Over time, I expanded into test engineering, DevSecOps, and CI/CD automation, ensuring that solutions are not only innovative but also high-quality, robust and secure.<br/><br/>My background combines strong analytical and modelling skills (BPMN, UML, use case and entity-relationship modelling) with practical expertise in software development and business process management.<br/><br/>I bring a deep understanding of Agile methodologies, process optimization, and digital transformation within both public administrations and healthcare technology organizations. This dual technical–functional profile allows me to act as a bridge between business and IT, ensuring that systems design, requirements documentation, and implementation are fully aligned with organizational goals, regulatory constraints, and user needs.<br/><br/>Core Competencies:<br/>- Business Analysis & Modelling (Requirements gathering, process mapping (BPMN/UML), business case definition, risk analysis)<br/>- Process Improvement (QMS optimization (ISO 9001, ISO 13485, MDR, ISO 27001, ITIL 4, GDPR), KPI dashboards, continuous improvement, and integration with buisness processes)<br/>- Digital Transformation (ALM, CI/CD, automation, and DevSecOps integration)<br/>- Stakeholder Management (Workshops, cross-functional collaboration, EU policy alignment, Teamleader)<br/>- Tools & Methods (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS, SonarQube/Codana)<br/>- Development & Test (Java, SQL, JUnit/TestNG, Cloud)",
     "experience": [
+      {
+        "role": "Leading Nature Outings",
+        "company": "Nature Guide (CRIE Modave - Trainee)",
+        "period": "Jun 2026 (4 days)",
+        "description": "Field observation internship as part of the “Leading Nature Outings” training program</br></br><b>Key Achievements:</b><ul><li>Exploring the Hoyoux River, fishing, and identifying small creatures.</li><li>Building a mud village in the watershed: houses, dikes, and rivers. </li><li>Flood simulation, observation of impacts, and discussions on solutions (River Contracts).</li><li>Workshop: Where Does the Water Go? Visit to the lagooning system and a pond.</li><li>Inspiration from the river, severe weather, and biodiversity (cyanotype).</li></ul>",
+        "location": "Modave",
+        "skills": [
+
+        ]
+      },
+      {
+        "role": "Software Engineering & Delivery Excellence Leader",
+        "company": "Dev Squad Lead (WASO - Employee)",
+        "period": "Dec 2025 - March 2026",
+        "description": "Led WASO's development squad, driving the design and delivery of scalable digital products across Java, React, cloud-native, mobile, and integration platforms. Defined architecture, quality, security, testing, observability, and CI/CD standards to ensure reliable and maintainable software delivery. Collaborated with executive leadership, product management, clients, and partners to align technical solutions with business objectives. Mentored engineers, coordinated technical roadmaps, and promoted cloud-native, event-driven, and AI-enabled solutions to support product growth and operational excellence.<br/><br/><b>Key Achievements:</b><br/><ul><li>Led the technical delivery of WASO's product platform from architecture to production deployment.</li><li>Defined and governed architecture, quality, security, testing, and CI/CD practices</li><li>Coordinated the technical roadmap in collaboration with the CTO and Product Owner</li><li>Guided technology choices across Java, React, cloud, mobile, and integration ecosystems.</li><li>Mentored developers and strengthened engineering capabilities within the squad.</li><li>Acted as the primary technical contact for clients, partners, and stakeholders.</li><li>Promoted cloud-native, event-driven, and AI-enabled solutions to support product innovation.</li><li>Ensured delivery velocity, operational stability, and customer satisfaction during product launches.</li></ul>",
+        "location": "Mons",
+        "skills": [
+          71,72,73,74,75,76,77,78,79,12,13,14,15,18,22,28,29,36,37,39,43,45,47,55,60,64,65,66,70,4,80,81
+        ]
+      },
       {
         "role": "Driving Quality and Digital Transformation",
         "company": "Quality Expert (SPW - Freelance)",
@@ -440,14 +472,15 @@
     ]
   },
   "education": [
-    { "id": 1, "name": "AWS Cloud Practitioner essentials (2023)" },
-    { "id": 2, "name": "Certified ScrumMaster - CSM (2023)" },
-    { "id": 3, "name": "Person Responsible for Regulatory Compliance (2021)" },
-    { "id": 4, "name": "Coach and Manage a team (2021)" },
-    { "id": 5, "name": "ITIL 4 Foundation (2020)" },
-    { "id": 6, "name": "ISO 13485/2016 and CE Mark (2019)" },
-    { "id": 7, "name": "PostgreSQL DBA (2015)" },
-    { "id": 8, "name": "Bachelor’s in Informatics – H.E.P.M.B.C (2005)" }
+    { "id": 1, "name": "Leading Nature Outings (2026)" },
+    { "id": 2, "name": "AWS Cloud Practitioner essentials (2023)" },
+    { "id": 3, "name": "Certified ScrumMaster - CSM (2023)" },
+    { "id": 4, "name": "Person Responsible for Regulatory Compliance (2021)" },
+    { "id": 5, "name": "Coach and Manage a team (2021)" },
+    { "id": 6, "name": "ITIL 4 Foundation (2020)" },
+    { "id": 7, "name": "ISO 13485/2016 and CE Mark (2019)" },
+    { "id": 8, "name": "PostgreSQL DBA (2015)" },
+    { "id": 9, "name": "Bachelor’s in Informatics – H.E.P.M.B.C (2005)" }
   ],
   "communication": [
     { "id": 1, "name": "English : Limited working proficiency" },

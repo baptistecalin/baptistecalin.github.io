@@ -120,7 +120,20 @@
       { "id": 66, "category": "Platform", "name": "CI/CD" },
       { "id": 67, "category": "Development", "name": "Python" },
       { "id": 68, "category": "Tools", "name": "Bizagi Modeler" },
-      { "id": 69, "category": "Tools", "name": "Visual Paradigm" }
+      { "id": 69, "category": "Tools", "name": "Visual Paradigm" },
+      { "id": 70, "category": "Processes", "name": "Dev(Sec)Ops" },
+      { "id": 71, "category": "Development", "name": "JAVA 21+" },
+      { "id": 72, "category": "Development", "name": "TypeScript" },
+      { "id": 73, "category": "Development", "name": "AI/ML Integration" },
+      { "id": 74, "category": "Development", "name": "RAG" },
+      { "id": 75, "category": "Databases", "name": "MariaDB" },
+      { "id": 76, "category": "Standards", "name": "Domain-Driven Design (DDD)" },
+      { "id": 77, "category": "Standards", "name": "Event-Driven Architecture" },
+      { "id": 78, "category": "Standards", "name": "Cloud Engineering" },
+      { "id": 79, "category": "Development", "name": "Terraform" },
+      { "id": 80, "category": "Databases", "name": "Amazon Aurora" },
+      { "id": 81, "category": "Tools", "name": "Qodana" }
+
     ]
   },
   "quality": {
@@ -403,8 +416,28 @@
   },
   "all": {
     "title": "",
-    "summary": "Avec plus de 15 ans d'expérience à la croisée de l'analyse des processus métier, de la gestion de la qualité et du génie logiciel, je me spécialise dans l'alignement des besoins métier avec les solutions informatiques dans des environnements réglementés et complexes. <br/><br/>J'ai commencé ma carrière en tant qu'ingénieur logiciel full-stack, en développant des applications web évolutives avec Java. Au fil du temps, j'ai élargi mes compétences à l'ingénierie de test, au DevSecOps et à l'automatisation CI/CD, afin de garantir que les solutions soient non seulement innovantes, mais aussi de haute qualité, robustes et sécurisées. <br/><br/>Mon parcours combine de solides compétences en analyse et en modélisation (BPMN, UML, modélisation de cas d'utilisation et d'entités-relations) avec une expertise pratique en développement logiciel et en gestion des processus métier. <br/><br/>J'apporte une connaissance approfondie des méthodologies Agile, de l'optimisation des processus et de la transformation numérique au sein des administrations publiques et des organisations technologiques du secteur de la santé. Ce double profil technique et fonctionnel me permet d'agir comme un pont entre les entreprises et les technologies de l'information, en veillant à ce que la conception des systèmes, la documentation des exigences et la mise en œuvre soient pleinement alignées sur les objectifs organisationnels, les contraintes réglementaires et les besoins des utilisateurs.<br/><br/>Compétences clés :<br/>- Analyse et modélisation commerciales (recueil des besoins, cartographie des processus (BPMN/UML), définition des analyses de rentabilité, analyse des risques)<br/> - Amélioration des processus (optimisation du système de gestion de la qualité (ISO 9001, ISO 13485, MDR, ISO 27001, ITIL 4, RGPD), tableaux de bord KPI, amélioration continue et intégration aux processus métier)<br/>- Transformation numérique (ALM, CI/CD, automatisation et intégration DevSecOps)<br/> - Gestion des parties prenantes (ateliers, collaboration interfonctionnelle, alignement sur les politiques de l'UE, Teamleader)<br/>- Outils et méthodes (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS, Sonarqube)<br/>- Développement et test (Java, SQL, JUnit/TestNG, Selenium)",
+    "summary": "Avec plus de 15 ans d'expérience à la croisée de l'analyse des processus métier, de la gestion de la qualité et du génie logiciel, je me spécialise dans l'alignement des besoins métier avec les solutions informatiques dans des environnements réglementés et complexes. <br/><br/>J'ai commencé ma carrière en tant qu'ingénieur logiciel full-stack, en développant des applications web évolutives avec Java. Au fil du temps, j'ai élargi mes compétences à l'ingénierie de test, au DevSecOps et à l'automatisation CI/CD, afin de garantir que les solutions soient non seulement innovantes, mais aussi de haute qualité, robustes et sécurisées. <br/><br/>Mon parcours combine de solides compétences en analyse et en modélisation (BPMN, UML, modélisation de cas d'utilisation et d'entités-relations) avec une expertise pratique en développement logiciel et en gestion des processus métier. <br/><br/>J'apporte une connaissance approfondie des méthodologies Agile, de l'optimisation des processus et de la transformation numérique au sein des administrations publiques et des organisations technologiques du secteur de la santé. Ce double profil technique et fonctionnel me permet d'agir comme un pont entre les entreprises et les technologies de l'information, en veillant à ce que la conception des systèmes, la documentation des exigences et la mise en œuvre soient pleinement alignées sur les objectifs organisationnels, les contraintes réglementaires et les besoins des utilisateurs.<br/><br/>Compétences clés :<br/>- Analyse et modélisation commerciales (recueil des besoins, cartographie des processus (BPMN/UML), définition des analyses de rentabilité, analyse des risques)<br/> - Amélioration des processus (optimisation du système de gestion de la qualité (ISO 9001, ISO 13485, MDR, ISO 27001, ITIL 4, RGPD), tableaux de bord KPI, amélioration continue et intégration aux processus métier)<br/>- Transformation numérique (ALM, CI/CD, automatisation et intégration DevSecOps)<br/> - Gestion des parties prenantes (ateliers, collaboration interfonctionnelle, alignement sur les politiques de l'UE, Teamleader)<br/>- Outils et méthodes (Jira, Confluence, Miro, Visual Paradigm, Bizagi Modeler, PowerBI, GitLab, Jenkins, Bizzmine eQMS, Sonarqube/Codana)<br/>- Développement et test (Java, SQL, JUnit/TestNG, Cloud)",
     "experience": [
+      {
+        "role": "Animer en pleine nature (Stage)",
+        "company": "Animateur (CRIE Modave - Stagiaire)",
+        "period": "Jun 2026 (4 days)",
+        "description": "Stage d’observation sur le terrain dans le cadre du programme de formation « Animer en pleine nature »</br></br><b>Principales réalisations :</b><ul><li>Exploration de la rivière Hoyoux, pêche et identification de petits bêtes.</li><li>Construction d’un village de boue dans le bassin versant : maisons, digues et rivières. </li><li>Simulation d’inondation, observation des impacts et discussions sur les solutions (contrats de rivière).</li><li>Atelier : « Où va l’eau ? » Visite du système de lagunage et d'une mare.</li><li>Inspiration tirée de la rivière, des phénomènes météorologiques extrêmes et de la biodiversité (cyanotype).</li></ul>",
+        "location": "Modave",
+        "skills": [
+
+        ]
+      },
+      {
+        "role": "Responsable de l'excellence en ingénierie logicielle et en livraison",
+        "company": "Java Senior Dev - Dev Squad Lead (WASO - Employé)",
+        "period": "Dec 2025 - March 2026",
+        "description": "J'ai dirigé l'équipe de développement de WASO, en pilotant la conception et la mise en œuvre de produits numériques évolutifs sur des plateformes Java, React, cloud-native, mobiles et d'intégration. J'ai défini des normes en matière d'architecture, de qualité, de sécurité, de tests, d'observabilité et de CI/CD afin de garantir la fiabilité et la maintenabilité des livraisons logicielles. A collaboré avec la direction générale, la gestion des produits, les clients et les partenaires afin d’aligner les solutions techniques sur les objectifs métier. A encadré des ingénieurs, coordonné les feuilles de route techniques et promu des solutions cloud natives, pilotées par les événements et basées sur l’IA pour soutenir la croissance des produits et l’excellence opérationnelle.<br/><br/><b>Principales réalisations :</b><br/><ul><li>A dirigé la mise en œuvre technique de la plateforme produit de WASO, de l’architecture au déploiement en production. </li><li>Définition et pilotage des pratiques en matière d’architecture, de qualité, de sécurité, de tests et de CI/CD</li><li>Coordination de la feuille de route technique en collaboration avec le directeur technique (CTO) et le Product Owner</li><li>Orientation des choix technologiques dans les écosystèmes Java, React, cloud, mobile et d’intégration.</li><li>Accompagnement des développeurs et renforcement des capacités d’ingénierie au sein de l’équipe.</li><li>Rôle de principal interlocuteur technique auprès des clients, des partenaires et des parties prenantes. </li><li>A promu des solutions cloud-native, pilotées par les événements et basées sur l’IA pour soutenir l’innovation produit.</li><li>A assuré la rapidité de livraison, la stabilité opérationnelle et la satisfaction client lors des lancements de produits.</li></ul>",
+        "location": "Mons",
+        "skills": [
+          71,72,73,74,75,76,77,78,79,12,13,14,15,18,22,28,29,36,37,39,43,45,47,55,60,64,65,66,70,4,80,81
+        ]
+      },
       {
         "role": "Améliorer la qualité et la transformation numérique",
         "company": "Quality Expert (SPW - Freelance)",
@@ -449,17 +482,18 @@
     ]
   },
   "education": [
-    { "id": 1, "name": "AWS Cloud Practitioner essentials (2023)" },
-    { "id": 2, "name": "Certifié ScrumMaster - CSM (2023)" },
+    { "id": 1, "name": "Animer en pleine nature (2026)" },
+    { "id": 2, "name": "AWS Cloud Practitioner essentials (2023)" },
+    { "id": 3, "name": "Certifié ScrumMaster - CSM (2023)" },
     {
-      "id": 3,
+      "id": 4,
       "name": "Personne Responsable de la Conformité Réglementaire (2021)"
     },
-    { "id": 4, "name": "Coach et Management d’équipe (2021)" },
-    { "id": 5, "name": "ITIL 4 Foundation (2020)" },
-    { "id": 6, "name": "ISO 13485/2016 et marquage CE (2019)" },
-    { "id": 7, "name": "PostgreSQL DBA (2015)" },
-    { "id": 8, "name": "Bachelier en Informatique – H.E.P.M.B.C (2005)" }
+    { "id": 5, "name": "Coach et Management d’équipe (2021)" },
+    { "id": 6, "name": "ITIL 4 Foundation (2020)" },
+    { "id": 7, "name": "ISO 13485/2016 et marquage CE (2019)" },
+    { "id": 8, "name": "PostgreSQL DBA (2015)" },
+    { "id": 9, "name": "Bachelier en Informatique – H.E.P.M.B.C (2005)" }
   ],
   "communication": [
     { "id": 1, "name": "Anglais : maîtrise professionnelle limitée" },

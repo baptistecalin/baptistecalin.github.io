@@ -53,6 +53,13 @@ This project is an **interactive online CV**, multilingual (EN / FR), with dynam
 2. Use the **EN / FR** button to switch languages.
 3. Use the **Quality Expert / Software Engineer** button to switch profiles.
 
+### Dev Container
+
+Lancer:
+```Bash
+python3 -m http.server 5500
+```
+
 ---
 
 ## Dependencies
