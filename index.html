@@ -1,76 +1,320 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Welcome - Baptiste Calin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CV de Baptiste Calin — IT Leader, Architecture & Transformation numérique, secteur de la santé.">
+<title>Baptiste Calin — IT Leader</title>
+<style>
+:root{
+  --primary:#6763be;
+  --primary-dark:#514da8;
+  --ink:#2b2d42;
+  --muted:#667085;
+  --soft:#f5f6fb;
+  --line:#e5e7ef;
+  --white:#fff;
+  --shadow:0 18px 50px rgba(43,45,66,.10);
+  --radius:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--soft);color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.65;
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,calc(100% - 36px));margin:auto}
+.topbar{
+  position:sticky;top:0;z-index:50;background:rgba(43,45,66,.94);
+  backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)
+}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+.brand-mark{width:40px;height:40px;border-radius:12px;background:var(--primary);display:grid;place-items:center;font-weight:900}
+.navlinks{display:flex;gap:22px;font-size:.9rem;color:#dfe1ea}
+.navlinks a:hover{color:#fff}
+.actions{display:flex;gap:8px}
+.btn{
+  border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;
+  border-radius:10px;padding:8px 12px;cursor:pointer;font-weight:700
+}
+.btn:hover{background:rgba(255,255,255,.1)}
+.btn.primary{background:var(--primary);border-color:var(--primary)}
+.btn.primary:hover{background:var(--primary-dark)}
+.hero{
+  background:linear-gradient(135deg,var(--ink) 0%,#363952 65%,#514da8 100%);
+  color:#fff;padding:70px 0 78px;position:relative;overflow:hidden
+}
+.hero:after{
+  content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  background:rgba(103,99,190,.28);right:-180px;top:-230px;filter:blur(3px)
+}
+.hero-grid{display:grid;grid-template-columns:180px 1fr;gap:38px;align-items:center;position:relative;z-index:1}
+.avatar{
+  width:180px;height:180px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,#807bd2,var(--primary));border:5px solid rgba(255,255,255,.2);
+  font-size:3.5rem;font-weight:900;box-shadow:0 15px 40px rgba(0,0,0,.22);overflow:hidden
+}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.eyebrow{color:#bdb9ff;text-transform:uppercase;letter-spacing:.15em;font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.02;margin:8px 0 12px;letter-spacing:-.05em}
+.hero h2{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:500;color:#e7e8ef;margin:0 0 22px}
+.contact{display:flex;flex-wrap:wrap;gap:10px}
+.contact a,.contact span{
+  padding:8px 12px;border-radius:10px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.1);font-size:.9rem
+}
+.contact a:hover{background:rgba(255,255,255,.14)}
+main{padding:38px 0 70px}
+.layout{display:grid;grid-template-columns:1fr 330px;gap:28px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.section{padding:30px}
+.section + .section{margin-top:22px}
+.section-head{display:flex;align-items:end;gap:15px;margin-bottom:24px}
+.num{color:var(--primary);font-weight:900;font-size:.78rem;letter-spacing:.15em}
+.section h2{margin:0;font-size:1.55rem;letter-spacing:-.025em}
+.section-intro{color:var(--muted);margin-top:-12px;margin-bottom:22px}
+.profile p{font-size:1.02rem;color:#42465a}
+.profile strong{color:var(--ink)}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill{
+  padding:20px;border:1px solid var(--line);border-radius:16px;background:#fbfbfd;
+  transition:.2s transform,.2s box-shadow
+}
+.skill:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(43,45,66,.08)}
+.skill h3{font-size:1rem;margin:0 0 10px;color:var(--primary-dark)}
+.skill ul,.job ul,.side-list{padding-left:19px;margin:0}
+.skill li,.job li{margin:4px 0;color:#555a6d}
+.job{padding:0 0 30px;margin-bottom:30px;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.job-top{display:flex;justify-content:space-between;gap:20px}
+.job h3{margin:0;font-size:1.25rem}
+.job-company{color:var(--primary);font-weight:800}
+.job-meta{text-align:right;color:var(--muted);font-size:.86rem;white-space:nowrap}
+.job p{color:#555a6d;margin:10px 0 12px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.tag{background:#efeffa;color:var(--primary-dark);border-radius:999px;padding:4px 9px;font-size:.75rem;font-weight:800}
+.timeline{border-left:2px solid #deddf3;padding-left:20px}
+.timeline-item{position:relative;margin-bottom:20px}
+.timeline-item:before{content:"";position:absolute;left:-27px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 4px #eeeefa}
+.timeline-item:last-child{margin-bottom:0}
+.timeline-item strong{display:block}
+.timeline-item span{color:var(--muted);font-size:.86rem}
+.side-sticky{position:sticky;top:94px}
+.side-card{padding:25px}
+.side-card + .side-card{margin-top:18px}
+.side-card h3{margin:0 0 16px;font-size:1rem}
+.pill-list{display:flex;flex-wrap:wrap;gap:7px}
+.pill{border:1px solid var(--line);padding:5px 9px;border-radius:999px;font-size:.78rem;color:#555a6d;background:#fff}
+.language{display:grid;grid-template-columns:1fr auto;gap:8px;padding:9px 0;border-bottom:1px solid var(--line)}
+.language:last-child{border:0}
+.language span{color:var(--muted)}
+footer{background:var(--ink);color:#bfc2d0;text-align:center;padding:28px}
+.reveal{opacity:0;transform:translateY(14px);transition:.55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:950px){
+  .layout{grid-template-columns:1fr}.side-sticky{position:static}.navlinks{display:none}
+}
+@media(max-width:680px){
+  .container{width:min(100% - 24px,1180px)}
+  .nav{height:62px}.brand-text{display:none}
+  .hero{padding:45px 0 52px}.hero-grid{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .contact{justify-content:center}.avatar{width:140px;height:140px;font-size:2.8rem}
+  .section{padding:22px}.skills-grid{grid-template-columns:1fr}
+  .job-top{flex-direction:column;gap:4px}.job-meta{text-align:left;white-space:normal}
+}
+@media print{
+  @page{size:A4;margin:12mm}
+  body{background:#fff;font-size:10.5pt}
+  .topbar,.actions,footer{display:none!important}
+  .hero{padding:22px 0;background:var(--ink)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero-grid{grid-template-columns:90px 1fr;gap:20px}.avatar{width:90px;height:90px;font-size:2rem}
+  h1{font-size:30pt}.hero h2{font-size:11pt}.contact a,.contact span{padding:2px 6px}
+  main{padding:15px 0}.layout{display:block}.side-sticky{position:static}
+  .card{box-shadow:none;border:1px solid #ddd;border-radius:8px}
+  .section{padding:18px}.section + .section{margin-top:10px}
+  .job{break-inside:avoid}.skill{break-inside:avoid}
+  .side-card{margin-top:10px}.reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Baptiste Calin">
+      <span class="brand-mark">BC</span><span class="brand-text">Baptiste Calin</span>
+    </a>
+    <nav class="navlinks" aria-label="Navigation">
+      <a href="#profil" data-i18n="nav.profile"></a>
+      <a href="#skills" data-i18n="nav.skills"></a>
+      <a href="#experience" data-i18n="nav.experience"></a>
+      <a href="#formation" data-i18n="nav.education"></a>
+    </nav>
+    <div class="actions">
+      <button class="btn" id="lang" type="button">EN</button>
+      <button class="btn primary" id="print" type="button" data-i18n="print"></button>
+    </div>
+  </div>
+</header>
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-  </head>
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="avatar" aria-label="Baptiste Calin"><img src="images/photo_profile-300x300.jpg"/></div>
+    <div>
+      <div class="eyebrow" data-i18n="hero.eyebrow"></div>
+      <h1>Baptiste Calin</h1>
+      <h2 data-i18n="hero.title"></h2>
+      <div class="contact">
+        <a href="tel:+32490460807">+32 490 46 08 07</a>
+        <a href="mailto:baba.cln@proton.me">baba.cln@proton.me</a>
+        <span>Colfontaine — Hainaut</span>
+        <a href="https://www.linkedin.com/in/baptistecalin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <body class="bg-light d-flex flex-column min-vh-100">
+<main>
+<div class="container layout">
+  <div>
 
-    <!-- HEADER -->
-    <header class="container text-center py-5">
-      <img
-        src="images/photo_profile-300x300.jpg"
-        alt="Profile photo"
-        class="rounded-circle mb-3"
-        width="140"
-        height="140"
-      />
+    <section class="card section profile reveal" id="profil">
+      <div class="section-head"><span class="num">01</span><h2 data-i18n="sections.profile"></h2></div>
+      <div data-i18n-html="profile"></div>
+    </section>
 
-      <h1 class="fw-bold">Welcome</h1>
-      <h2 class="mb-3">Baptiste Calin</h2>
-      <p class="lead text-muted">
-        IT Leader | Architecture & Transformation numérique | Secteur de la santé
-      </p>
-    </header>
+    <section class="card section reveal" id="skills">
+      <div class="section-head"><span class="num">02</span><h2 data-i18n="sections.skills"></h2></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
 
-    <!-- CONTACT -->
-    <main class="container text-center">
-      <div class="card shadow-sm p-4 mx-auto" style="max-width: 500px;">
-        <h4 class="mb-3">Contact Information</h4>
+    <section class="card section reveal" id="experience">
+      <div class="section-head"><span class="num">03</span><h2 data-i18n="sections.experience"></h2></div>
+      <div id="jobs"></div>
+    </section>
 
-        <p class="mb-2">
-          <i class="bi bi-envelope"></i>
-          <a href="mailto:baptiste.calin@gmail.com">
-            baptiste.calin@gmail.com
-          </a>
-        </p>
+    <section class="card section reveal" id="formation">
+      <div class="section-head"><span class="num">04</span><h2 data-i18n="sections.education"></h2></div>
+      <div class="timeline" id="education"></div>
+    </section>
 
-        <p class="mb-2">
-          <i class="bi bi-phone"></i>
-          <a href="tel:+32478941065">+32 490 46 08 07</a>
-        </p>
+  </div>
 
-        <p class="mb-2">
-          <i class="bi bi-geo-alt"></i>
-          Colfontaine, Belgium
-        </p>
+  <aside class="side-sticky">
+    <section class="card side-card reveal">
+      <h3 data-i18n="sections.management"></h3>
+      <ul class="side-list" id="management"></ul>
+    </section>
+    <section class="card side-card reveal">
+      <h3 data-i18n="sections.tools"></h3>
+      <div class="pill-list" id="tools"></div>
+    </section>
+    <section class="card side-card reveal">
+      <h3 data-i18n="sections.languages"></h3>
+      <div id="languages"></div>
+    </section>
+  </aside>
+</div>
+</main>
 
-        <p class="mb-0">
-          <i class="bi bi-globe"></i>
-          <a href="https://baptistecalin.github.io" target="_blank">
-            Personal Website
-          </a>
-        </p>      </div>
-    </main>
+<footer><span>© <span id="year"></span> Baptiste Calin</span></footer>
 
-    <!-- FOOTER -->
-    <footer class="text-center py-4 mt-auto">
-      <small>&copy; 2026 - Baptiste Calin</small>
-    </footer>
+<script>
+const DATA = {
+fr:{
+ nav:{profile:"Profil",skills:"Compétences",experience:"Expérience",education:"Formation"},
+ print:"Imprimer / PDF",
+ hero:{eyebrow:"IT Leader - Architecture & Transformation numérique",title:"Secteur de la santé"},
+ sections:{profile:"Profil",skills:"Compétences clés",experience:"Expérience professionnelle",education:"Formation",management:"Compétences managériales",tools:"Technologies & outils",languages:"Langues"},
+ profile:`<p>Professionnel IT avec <strong>plus de 20 ans d'expérience</strong> dans la conception, l'évolution et la gouvernance de systèmes d'information complexes, dont plus de 15 ans dans le secteur des <strong>solutions numériques de santé</strong>.</p>
+<p>Mon parcours combine <strong>architecture IT, analyse fonctionnelle, transformation numérique, management d'équipes, gouvernance, qualité, cybersécurité, conformité et amélioration continue</strong>.</p>
+<p>Au sein de Xperthis/ZORGI, j'ai participé pendant plus d'une décennie à la conception et à l'évolution de solutions de <strong>dossiers patient électroniques et de portails patients utilisés dans des hôpitaux et réseaux de soins</strong>. J'ai travaillé à l'interface entre équipes techniques, équipes métier et parties prenantes du secteur de la santé.</p>
+<p>J'ai progressivement évolué vers des responsabilités transversales de <strong>qualité, gouvernance et coordination</strong>, notamment autour des systèmes de management de la qualité, de l'analyse des risques, de la conformité réglementaire, des KPI et de la transformation des processus.</p>
+<p>Mon profil me permet ainsi de faire le lien entre <strong>stratégie institutionnelle, enjeux métiers, architecture du système d'information et mise en œuvre opérationnelle</strong>.</p>
+<p>Je souhaite aujourd'hui mettre cette expérience au service d'une fonction de <strong>direction IT dans un environnement hospitalier</strong>, avec une attention particulière portée à la fiabilité des services, à la sécurité des données, à l'innovation et à l'accompagnement des équipes.</p>`,
+ skillCats:[
+  ["Stratégie & gouvernance IT",["Stratégie et gouvernance des systèmes d'information","Architecture fonctionnelle et technique","Roadmap et transformation numérique","Gouvernance des processus IT","Définition de standards et méthodes","ITIL 4","Gestion de la qualité et amélioration continue"]],
+  ["Management & leadership",["Coordination d'équipes IT pluridisciplinaires","Team leadership","Animation et accompagnement des équipes","Formation et coaching","Gestion des parties prenantes","Coordination métier / IT","Accompagnement du changement"]],
+  ["Santé & SI hospitaliers",["Dossiers patients électroniques (EPR)","Portails patients","Solutions SaaS de santé","Analyse des besoins des équipes cliniques","Processus et parcours utilisateurs","Interopérabilité et architecture applicative","Environnements réglementés"]],
+  ["Cybersécurité & conformité",["RGPD","ISO 27001","ISO 13485","MDR","DevSecOps","Analyse des risques","Plans de sécurité","Protection des données dans les environnements de santé"]],
+  ["Projets & transformation",["Pilotage de projets transversaux","Analyse fonctionnelle","BPMN / UML","Agile / Scrum","CI/CD","Transformation des processus","Automatisation","Gestion des risques et analyse d'impact"]],
+  ["Performance & qualité",["KPI et tableaux de bord","Power BI","QMS / eQMS","ISO 9001","ISO 13485","Amélioration continue","Assurance qualité","Préparation et suivi d'audits"]]
+ ],
+ jobs:[
+  {role:"Software Engineer",company:"WASO",place:"Mons",date:"Décembre 2025 — Mars 2026",desc:"Participation au développement d'une plateforme B2B de gestion de copropriété destinée au marché belge.",items:["Accompagnement technique du projet de bout en bout, de l'analyse des besoins jusqu'à la mise en œuvre.","Collaboration avec différents interlocuteurs pour comprendre les besoins et proposer des solutions adaptées.","Contribution à l'intégration de solutions d'intelligence artificielle dans la plateforme.","Participation à la migration de la plateforme vers le cloud AWS.","Contribution à la mise en place d'une authentification forte.","Travail dans un environnement nécessitant autonomie, adaptation et collaboration avec différents profils."],tags:"ISO 12207|ITIL 4|Agile/Scrum|Jira|Confluence"},
+  {role:"Quality Expert / Analyste informatique",company:"Service public de Wallonie (SPW) — Freelance",place:"Namur",date:"Avril 2023 — Septembre 2025",desc:"Dans le cadre de la transformation numérique du Service public de Wallonie, intervention à l'interface entre processus métier, gouvernance de la qualité, conformité et transformation numérique.",items:["Pilotage de l'analyse et de la mise en œuvre d'une usine de développement conforme à ISO 12207.","Cartographie et documentation des processus métier selon BPMN.","Standardisation de la gestion du cycle de vie des applications et des processus associés.","Mise en place et automatisation de contrôles qualité dans les processus de développement.","Contribution à une démarche d'amélioration continue des processus et de la qualité des livrables.","Coordination entre parties prenantes métier, chefs de projet, équipes qualité et équipes techniques.","Utilisation d'indicateurs et de tableaux de bord pour suivre la performance et la qualité des processus."],tags:"QMS|ISO 9001|ISO 12207|ITIL 4|Agile/Scrum|BPMN|KPI|Power BI|Jira|Confluence|GitLab|Jenkins|SonarQube|DevSecOps|AWS"},
+  {role:"Quality Expert / Business Analyst",company:"ZORGI",place:"Heverlee",date:"Juin 2019 — Avril 2023",desc:"Responsabilité de l'interface entre IT, qualité, conformité réglementaire et processus métier au sein d'un acteur spécialisé dans les solutions numériques de santé.",items:["Conception, mise en œuvre et maintien d'un système de management de la qualité conforme à ISO 13485 pour des logiciels médicaux.","Intégration des exigences ISO 9001, ISO 27001, MDR et RGPD dans une approche cohérente de gouvernance de la qualité et de la conformité.","Réalisation d'analyses de risques et d'analyses de processus.","Élaboration de plans de sécurité et documentation réglementaire.","Préparation et gestion de la documentation nécessaire aux audits d'organismes notifiés.","Élaboration de chartes, analyses de risques, plans de sécurité et dossiers techniques.","Mise en place d'indicateurs de performance et de tableaux de bord Power BI/eQMS.","Suivi de la conformité, de la performance des processus et de l'efficacité des formations.","Animation de formations et d'ateliers afin de favoriser l'appropriation des objectifs qualité par les équipes.","Coordination entre équipes de développement, assurance qualité et conformité.","Promotion d'une culture d'amélioration continue et de préparation aux audits."],tags:"ISO 13485|ISO 9001|ISO 27001|MDR|RGPD|QMS|eQMS|BPMN|Power BI|Agile/Scrum|Jira|Confluence"},
+  {role:"Test & Release Manager / Business Analyst",company:"Xperthis Group",place:"Nivelles",date:"Juin 2020 — Juin 2021",desc:"Responsabilité de la qualité, de la fiabilité et de la traçabilité des déploiements de solutions informatiques utilisées dans des environnements de soins de santé. Coordination entre plusieurs équipes et interlocuteurs dans le cadre de projets informatiques.",items:["Définition et pilotage d'une stratégie de gestion des versions.","Mise en place de processus structurés de livraison et de déploiement.","Réalisation d'analyses de risques et d'évaluations d'impact.","Définition et suivi d'indicateurs de qualité et de préparation.","Mise en place de processus de validation continue.","Coordination de parties prenantes issues du développement, de l'exploitation, de l'assurance qualité et du produit.","Amélioration des boucles de retour d'information et de la prise de décision entre équipes."],tags:"ITIL 4|Agile/Scrum|Qualité|Gestion des risques|KPI|Jira|Confluence|Power BI|Jenkins|CI/CD"},
+  {role:"Solution Architect / Software Engineer",company:"Xperthis Group",place:"Nivelles",date:"Mars 2006 — Juin 2019",desc:"Plus de dix années consacrées à la conception et à l'amélioration de solutions de dossiers patients électroniques (EPR) et de portails patients destinées aux hôpitaux et réseaux de soins. Évolution progressive vers des fonctions d'analyse, de coordination et d'accompagnement des utilisateurs.",items:["Direction de l'architecture et de l'analyse fonctionnelle de solutions DME et portail patient.","Conception de solutions web SaaS évolutives et interopérables.","Analyse des besoins avec les équipes cliniques et les parties prenantes du secteur de la santé.","Modélisation des processus métier et des parcours utilisateurs.","Animation d'ateliers avec les utilisateurs et parties prenantes.","Définition de visions et de roadmaps produit.","Contribution à la conformité des solutions avec les normes applicables aux logiciels de santé.","Coordination de plusieurs équipes de développement interfonctionnelles.","Standardisation des processus et promotion des pratiques Agile.","Contribution à la gestion des incidents et à l'amélioration de la fiabilité des services."],tags:"EPR|Portail patient|SaaS|BPMN|UML|ISO 62304|ISO 82304|ISO 12207|Agile/Scrum|ITIL|Java/J2EE|Spring|REST"}
+ ],
+ education:["Certified ScrumMaster (CSM) — 2023","AWS Cloud Practitioner Essentials — 2023","Personne Responsable de la Conformité Réglementaire (PRRC) — 2021","Coach et Management d'équipe — 2021","ITIL 4 Foundation — 2020","ISO 13485:2016 et marquage CE — 2019","PostgreSQL DBA — 2015","Bachelier en Informatique — H.E.P.M.B.C., 2005"],
+ management:["Leadership et coordination d'équipes","Management et coaching","Coordination transverse","Gestion des parties prenantes","Communication métier / IT","Conduite du changement","Prise de décision","Orientation résultats","Amélioration continue"],
+ tools:["Java/J2EE","Spring","REST","SQL","AWS","GitLab","Jenkins","Docker","CI/CD","DevSecOps","Jira","Confluence","Miro","Microsoft Office","BPMN","UML","Agile/Scrum","ITIL 4","Bizzmine/eQMS","Power BI","SonarQube","ISO 9001","ISO 13485","ISO 27001","ISO 12207","ISO 62304","ISO 82304","MDR","RGPD"],
+ languages:[["Français","C1 / langue maternelle"],["Anglais","B1 / niveau professionnel"]]
+},
+en:{
+ nav:{profile:"Profile",skills:"Skills",experience:"Experience",education:"Education"},
+ print:"Print / PDF",
+ hero:{eyebrow:"IT Leader - Architecture & Digital Transformation",title:"Healthcare sector"},
+ sections:{profile:"Profile",skills:"Key skills",experience:"Professional experience",education:"Education",management:"Management skills",tools:"Technology & tools",languages:"Languages"},
+ profile:`<p>IT professional with <strong>20+ years of experience</strong> in the design, evolution and governance of complex information systems, including more than 15 years in <strong>digital healthcare solutions</strong>.</p>
+<p>My background combines <strong>IT architecture, functional analysis, digital transformation, team management, governance, quality, cybersecurity, compliance and continuous improvement</strong>.</p>
+<p>At Xperthis/ZORGI, I spent more than a decade contributing to the design and evolution of <strong>electronic patient records and patient portals used by hospitals and healthcare networks</strong>. I worked at the interface between technical teams, business teams and healthcare stakeholders.</p>
+<p>I progressively moved into cross-functional responsibilities covering <strong>quality, governance and coordination</strong>, particularly quality management systems, risk analysis, regulatory compliance, KPIs and process transformation.</p>
+<p>This profile enables me to connect <strong>institutional strategy, business needs, information-system architecture and operational implementation</strong>.</p>
+<p>I am now looking to bring this experience to an <strong>IT leadership role in a hospital environment</strong>, with a strong focus on service reliability, data security, innovation and team development.</p>`,
+ skillCats:[
+ ["IT strategy & governance",["Information systems strategy and governance","Functional and technical architecture","Digital transformation roadmaps","IT process governance","Standards and methods definition","ITIL 4","Quality management and continuous improvement"]],
+ ["Management & leadership",["Coordination of multidisciplinary IT teams","Team leadership","Team facilitation and support","Training and coaching","Stakeholder management","Business / IT coordination","Change management"]],
+ ["Healthcare & hospital information systems",["Electronic patient records (EPR)","Patient portals","Healthcare SaaS solutions","Clinical team needs analysis","Processes and user journeys","Interoperability and application architecture","Regulated environments"]],
+ ["Cybersecurity & compliance",["GDPR","ISO 27001","ISO 13485","MDR","DevSecOps","Risk analysis","Security plans","Data protection in healthcare environments"]],
+ ["Projects & transformation",["Cross-functional project leadership","Functional analysis","BPMN / UML","Agile / Scrum","CI/CD","Process transformation","Automation","Risk management and impact analysis"]],
+ ["Performance & quality",["KPIs and dashboards","Power BI","QMS / eQMS","ISO 9001","ISO 13485","Continuous improvement","Quality assurance","Audit preparation and follow-up"]]
+ ],
+ jobs:[
+  {role:"Software Engineer",company:"WASO",place:"Mons",date:"December 2025 — March 2026",desc:"Contributed to the development of a B2B condominium management platform for the Belgian market.",items:["Technical contribution throughout the project lifecycle, from requirements analysis to implementation.","Collaboration with stakeholders to understand needs and propose appropriate solutions.","Contribution to the integration of artificial intelligence solutions into the platform.","Participation in the migration of the platform to AWS cloud.","Contribution to the implementation of strong authentication.","Worked in an environment requiring autonomy, adaptability and collaboration across profiles."],tags:"ISO 12207|ITIL 4|Agile/Scrum|Jira|Confluence"},
+  {role:"Quality Expert / IT Analyst",company:"Service public de Wallonie (SPW) — Freelance",place:"Namur",date:"April 2023 — September 2025",desc:"As part of the digital transformation of the Walloon Public Service, working at the interface between business processes, quality governance, compliance and digital transformation.",items:["Led the analysis and implementation of a development factory compliant with ISO 12207.","Mapped and documented business processes using BPMN.","Standardized application lifecycle management and associated processes.","Implemented and automated quality controls in development processes.","Contributed to continuous improvement of processes and deliverable quality.","Coordinated business stakeholders, project managers, quality teams and technical teams.","Used indicators and dashboards to monitor process performance and quality."],tags:"QMS|ISO 9001|ISO 12207|ITIL 4|Agile/Scrum|BPMN|KPI|Power BI|Jira|Confluence|GitLab|Jenkins|SonarQube|DevSecOps|AWS"},
+  {role:"Quality Expert / Business Analyst",company:"ZORGI",place:"Heverlee",date:"June 2019 — April 2023",desc:"Responsible for the interface between IT, quality, regulatory compliance and business processes within a company specializing in digital healthcare solutions.",items:["Designed, implemented and maintained an ISO 13485-compliant quality management system for medical software.","Integrated ISO 9001, ISO 27001, MDR and GDPR requirements into a coherent quality and compliance governance approach.","Performed risk and process analyses.","Developed security plans and regulatory documentation.","Prepared and managed documentation required for notified-body audits.","Produced charters, risk analyses, security plans and technical files.","Implemented performance indicators and Power BI/eQMS dashboards.","Monitored compliance, process performance and training effectiveness.","Delivered training sessions and workshops to support quality objectives.","Coordinated development, quality assurance and compliance teams.","Promoted a culture of continuous improvement and audit readiness."],tags:"ISO 13485|ISO 9001|ISO 27001|MDR|GDPR|QMS|eQMS|BPMN|Power BI|Agile/Scrum|Jira|Confluence"},
+  {role:"Test & Release Manager / Business Analyst",company:"Xperthis Group",place:"Nivelles",date:"June 2020 — June 2021",desc:"Responsible for the quality, reliability and traceability of deployments of IT solutions used in healthcare environments. Coordinated multiple teams and stakeholders across IT projects.",items:["Defined and managed a release management strategy.","Implemented structured delivery and deployment processes.","Performed risk analyses and impact assessments.","Defined and monitored quality and readiness indicators.","Implemented continuous validation processes.","Coordinated stakeholders from development, operations, quality assurance and product.","Improved feedback loops and decision-making between teams."],tags:"ITIL 4|Agile/Scrum|Quality|Risk management|KPI|Jira|Confluence|Power BI|Jenkins|CI/CD"},
+  {role:"Solution Architect / Software Engineer",company:"Xperthis Group",place:"Nivelles",date:"March 2006 — June 2019",desc:"More than ten years dedicated to the design and improvement of electronic patient record (EPR) and patient portal solutions for hospitals and healthcare networks. Progressively evolved toward analysis, coordination and user support responsibilities.",items:["Led architecture and functional analysis for EPR and patient portal solutions.","Designed scalable and interoperable SaaS web solutions.","Analyzed needs with clinical teams and healthcare stakeholders.","Modeled business processes and user journeys.","Facilitated workshops with users and stakeholders.","Defined product visions and roadmaps.","Contributed to compliance with standards applicable to healthcare software.","Coordinated several cross-functional development teams.","Standardized processes and promoted Agile practices.","Contributed to incident management and service reliability improvement."],tags:"EPR|Patient portal|SaaS|BPMN|UML|ISO 62304|ISO 82304|ISO 12207|Agile/Scrum|ITIL|Java/J2EE|Spring|REST"}
+ ],
+ education:["Certified ScrumMaster (CSM) — 2023","AWS Cloud Practitioner Essentials — 2023","Person Responsible for Regulatory Compliance (PRRC) — 2021","Team Coaching & Management — 2021","ITIL 4 Foundation — 2020","ISO 13485:2016 and CE marking — 2019","PostgreSQL DBA — 2015","Bachelor's degree in Computer Science — H.E.P.M.B.C., 2005"],
+ management:["Team leadership and coordination","Management and coaching","Cross-functional coordination","Stakeholder management","Business / IT communication","Change management","Decision-making","Results orientation","Continuous improvement"],
+ tools:["Java/J2EE","Spring","REST","SQL","AWS","GitLab","Jenkins","Docker","CI/CD","DevSecOps","Jira","Confluence","Miro","Microsoft Office","BPMN","UML","Agile/Scrum","ITIL 4","Bizzmine/eQMS","Power BI","SonarQube","ISO 9001","ISO 13485","ISO 27001","ISO 12207","ISO 62304","ISO 82304","MDR","GDPR"],
+ languages:[["French","C1 / native language"],["English","B1 / professional level"]]
+}};
 
-  </body>
+let lang = localStorage.getItem("cv-lang") || "fr";
+const $ = s => document.querySelector(s);
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+function render(){
+ const d=DATA[lang];
+ document.documentElement.lang=lang;
+ document.title=`Baptiste Calin — ${lang==="fr"?"IT Leader":"IT Leader"}`;
+ document.querySelectorAll("[data-i18n]").forEach(el=>{
+   const path=el.dataset.i18n.split(".");
+   let v=d; path.forEach(k=>v=v[k]); el.textContent=v;
+ });
+ document.querySelectorAll("[data-i18n-html]").forEach(el=>el.innerHTML=d[el.dataset.i18nHtml]);
+ $("#lang").textContent=lang==="fr"?"EN":"FR";
+ $("#skillsGrid").innerHTML=d.skillCats.map(([title,items])=>`<article class="skill"><h3>${esc(title)}</h3><ul>${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></article>`).join("");
+ $("#jobs").innerHTML=d.jobs.map(j=>`<article class="job"><div class="job-top"><div><h3>${esc(j.role)}</h3><div class="job-company">${esc(j.company)}</div></div><div class="job-meta"><strong>${esc(j.place)}</strong><br>${esc(j.date)}</div></div><p>${esc(j.desc)}</p><ul>${j.items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><div class="tags">${j.tags.split("|").map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div></article>`).join("");
+ $("#education").innerHTML=d.education.map(x=>`<div class="timeline-item"><strong>${esc(x)}</strong></div>`).join("");
+ $("#management").innerHTML=d.management.map(x=>`<li>${esc(x)}</li>`).join("");
+ $("#tools").innerHTML=d.tools.map(x=>`<span class="pill">${esc(x)}</span>`).join("");
+ $("#languages").innerHTML=d.languages.map(([a,b])=>`<div class="language"><strong>${esc(a)}</strong><span>${esc(b)}</span></div>`).join("");
+ localStorage.setItem("cv-lang",lang);
+}
+$("#lang").addEventListener("click",()=>{lang=lang==="fr"?"en":"fr";render()});
+$("#print").addEventListener("click",()=>window.print());
+$("#year").textContent=new Date().getFullYear();
+render();
+
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
 </html>

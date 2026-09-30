@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Baptiste Calin — LinkedIn Banner</title>
+
+  <style>
+    :root {
+      --primary: #6763be;
+      --primary-light: #8b88d8;
+      --dark: #2b2d42;
+      --white: #ffffff;
+      --muted: #c8c9d5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      background: #11121d;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    }
+
+    /*
+      LinkedIn recommended banner ratio:
+      1584 × 396 px
+      Ratio: 4:1
+    */
+
+    .linkedin-banner {
+      position: relative;
+
+      width: 1584px;
+      height: 396px;
+
+      max-width: 100vw;
+      aspect-ratio: 4 / 1;
+
+      overflow: hidden;
+
+      color: var(--white);
+
+      background:
+        radial-gradient(
+          circle at 88% 20%,
+          rgba(103, 99, 190, 0.55),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 5% 100%,
+          rgba(103, 99, 190, 0.20),
+          transparent 32%
+        ),
+        linear-gradient(
+          115deg,
+          #2b2d42 0%,
+          #303248 55%,
+          #48447f 100%
+        );
+    }
+
+    /* =========================
+       DECORATIVE BACKGROUND
+    ========================= */
+
+    .grid {
+      position: absolute;
+      inset: 0;
+
+      opacity: 0.10;
+
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,.18) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.18) 1px,
+          transparent 1px
+        );
+
+      background-size: 44px 44px;
+
+      mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 30%,
+        black 80%,
+        transparent 100%
+      );
+    }
+
+    .circle {
+      position: absolute;
+
+      border: 1px solid rgba(255,255,255,.09);
+
+      border-radius: 50%;
+    }
+
+    .circle-one {
+      width: 560px;
+      height: 560px;
+
+      right: -210px;
+      top: -330px;
+    }
+
+    .circle-two {
+      width: 420px;
+      height: 420px;
+
+      right: -80px;
+      top: -260px;
+    }
+
+    .circle-three {
+      width: 300px;
+      height: 300px;
+
+      left: -170px;
+      bottom: -240px;
+
+      border-color: rgba(103,99,190,.35);
+    }
+
+    .accent {
+      position: absolute;
+
+      width: 7px;
+      height: 210px;
+
+      left: 94px;
+      top: 93px;
+
+      border-radius: 8px;
+
+      background:
+        linear-gradient(
+          to bottom,
+          var(--primary-light),
+          var(--primary)
+        );
+
+      box-shadow:
+        0 0 30px rgba(103,99,190,.45);
+    }
+
+    /* =========================
+       CONTENT
+    ========================= */
+
+    .content {
+      position: absolute;
+
+      left: 145px;
+      right: 110px;
+      top: 0;
+      bottom: 0;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      z-index: 2;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+
+      color: #aaa7ed;
+
+      font-size: 14px;
+      font-weight: 800;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+    }
+
+    .name {
+      margin: 0;
+
+      font-size: 64px;
+      line-height: 1;
+
+      font-weight: 850;
+
+      letter-spacing: -3px;
+    }
+
+    .title {
+      margin-top: 18px;
+
+      font-size: 25px;
+
+      line-height: 1.3;
+
+      font-weight: 500;
+
+      color: #f1f1f5;
+    }
+
+    .title span {
+      color: var(--primary-light);
+    }
+
+    /* =========================
+       EXPERTISE
+    ========================= */
+
+    .expertise {
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-top: 28px;
+    }
+
+    .tag {
+      padding: 8px 15px;
+
+      border: 1px solid rgba(255,255,255,.13);
+
+      border-radius: 8px;
+
+      background: rgba(255,255,255,.055);
+
+      color: #dedee7;
+
+      font-size: 12px;
+      font-weight: 650;
+
+      letter-spacing: .3px;
+
+      backdrop-filter: blur(8px);
+    }
+
+    .tag.highlight {
+      border-color: rgba(103,99,190,.65);
+
+      background:
+        rgba(103,99,190,.20);
+
+      color: #e2e0ff;
+    }
+
+    /* =========================
+       RIGHT VISUAL
+    ========================= */
+
+    .right-decoration {
+      position: absolute;
+
+      right: 100px;
+      top: 50%;
+
+      width: 250px;
+      height: 250px;
+
+      transform: translateY(-50%);
+
+      opacity: .9;
+    }
+
+    .right-decoration::before,
+    .right-decoration::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      border-radius: 50%;
+
+      border: 1px solid rgba(255,255,255,.09);
+    }
+
+    .right-decoration::after {
+      inset: 35px;
+
+      border-color: rgba(103,99,190,.45);
+    }
+
+    .node {
+      position: absolute;
+
+      width: 13px;
+      height: 13px;
+
+      border-radius: 50%;
+
+      background: var(--primary-light);
+
+      box-shadow:
+        0 0 20px rgba(139,136,216,.8);
+    }
+
+    .node.one {
+      top: 18px;
+      left: 115px;
+    }
+
+    .node.two {
+      right: 12px;
+      top: 112px;
+    }
+
+    .node.three {
+      bottom: 25px;
+      left: 92px;
+    }
+
+    .node.four {
+      left: 5px;
+      top: 118px;
+    }
+
+    .connection {
+      position: absolute;
+
+      height: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(139,136,216,.55),
+          transparent
+        );
+
+      transform-origin: left center;
+    }
+
+    .connection.one {
+      width: 120px;
+
+      top: 52px;
+      left: 116px;
+
+      transform: rotate(38deg);
+    }
+
+    .connection.two {
+      width: 115px;
+
+      top: 122px;
+      left: 118px;
+
+      transform: rotate(-3deg);
+    }
+
+    .connection.three {
+      width: 110px;
+
+      top: 145px;
+      left: 105px;
+
+      transform: rotate(125deg);
+    }
+
+    /* =========================
+       RESPONSIVE PREVIEW
+    ========================= */
+
+    @media (max-width: 1100px) {
+
+      .linkedin-banner {
+        height: auto;
+        min-height: 396px;
+
+        aspect-ratio: auto;
+      }
+
+      .content {
+        left: 70px;
+        right: 70px;
+      }
+
+      .accent {
+        left: 30px;
+      }
+
+      .right-decoration {
+        right: 40px;
+        opacity: .45;
+      }
+    }
+
+    @media (max-width: 750px) {
+
+      .linkedin-banner {
+        min-height: 500px;
+      }
+
+      .content {
+        left: 45px;
+        right: 45px;
+      }
+
+      .accent {
+        display: none;
+      }
+
+      .name {
+        font-size: 48px;
+        letter-spacing: -2px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+      }
+
+      .right-decoration {
+        display: none;
+      }
+    }
+
+    /* =========================
+       PRINT / EXPORT
+    ========================= */
+
+    @media print {
+
+      @page {
+        size: 1584px 396px;
+        margin: 0;
+      }
+
+      html,
+      body {
+        width: 1584px;
+        height: 396px;
+        background: transparent;
+      }
+
+      .linkedin-banner {
+        width: 1584px;
+        height: 396px;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="linkedin-banner">
+
+    <!-- Background -->
+    <div class="grid"></div>
+
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+    <div class="circle circle-three"></div>
+
+    <div class="accent"></div>
+
+    <!-- Decorative network -->
+    <div class="right-decoration">
+
+      <div class="node one"></div>
+      <div class="node two"></div>
+      <div class="node three"></div>
+      <div class="node four"></div>
+
+      <div class="connection one"></div>
+      <div class="connection two"></div>
+      <div class="connection three"></div>
+
+    </div>
+
+    <!-- Main banner content -->
+    <main class="content">
+
+      <div class="eyebrow">
+        IT LEADERSHIP · ARCHITECTURE · DIGITAL TRANSFORMATION
+      </div>
+
+      <h1 class="name">
+        Baptiste Calin
+      </h1>
+
+      <div class="title">
+        IT Leader
+        <span>·</span>
+        Architecture &amp; Digital Transformation
+        <span>·</span>
+        Healthcare
+      </div>
+
+      <div class="expertise">
+
+        <div class="tag highlight">
+          Healthcare IT
+        </div>
+
+        <div class="tag">
+          IT Strategy &amp; Governance
+        </div>
+
+        <div class="tag">
+          Solution Architecture
+        </div>
+
+        <div class="tag">
+          Quality &amp; Compliance
+        </div>
+
+        <div class="tag">
+          Cybersecurity
+        </div>
+
+        <div class="tag">
+          Digital Transformation
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
